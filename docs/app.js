@@ -19,7 +19,10 @@ const ALERT_TYPES = {
 };
 
 let DATA, BY_ID;
-const state = { programs: new Set(), semester: "", q: "", view: "resumen", month: null, sort: { key: "start", dir: 1 } };
+const state = {
+  programs: new Set(), semester: "", q: "", view: "resumen", month: null, week: null, sort: { key: "start", dir: 1 },
+  plan: { days: [], start: "18:00", end: "21:00", from: "2027-02-01", to: "2027-03-31" },
+};
 
 // ------------------------------------------------------------------ utils
 const $ = (s) => document.querySelector(s);
@@ -109,6 +112,9 @@ function readHash() {
   state.semester = params.get("s") || "";
   state.q = params.get("q") || "";
   if (params.get("m")) state.month = Number(params.get("m"));
+  if (/^\d{4}-\d{2}-\d{2}$/.test(params.get("w") || "")) state.week = weekStartOf(params.get("w"));
+  const e = (params.get("e") || "").split("_");
+  if (e.length === 5) state.plan = { days: [...e[0]].map(Number).filter((n) => n >= 0 && n <= 6), start: e[1], end: e[2], from: e[3], to: e[4] };
 }
 function writeHash() {
   const params = new URLSearchParams();
@@ -116,6 +122,11 @@ function writeHash() {
   if (state.semester) params.set("s", state.semester);
   if (state.q) params.set("q", state.q);
   if (state.view === "calendario" && state.month != null) params.set("m", state.month);
+  if (state.view === "semana") {
+    if (state.week) params.set("w", state.week);
+    const p = state.plan;
+    if (p.days.length) params.set("e", [p.days.join(""), p.start, p.end, p.from, p.to].join("_"));
+  }
   const h = `#${state.view}${params.toString() ? "?" + params : ""}`;
   if (location.hash !== h) history.replaceState(null, "", h);
 }
@@ -126,6 +137,7 @@ function syncControls() {
   if ($("#f-search").value !== state.q) $("#f-search").value = state.q;
   document.querySelectorAll("nav.tabs button").forEach((b) => b.setAttribute("aria-selected", b.dataset.view === state.view));
   document.querySelectorAll(".view").forEach((v) => { v.hidden = v.id !== `view-${state.view}`; });
+  syncPlanForm();
 }
 
 function update() {
@@ -137,7 +149,7 @@ function update() {
   const crit = issues.filter((i) => ALERT_TYPES[i.type]?.sev === "critical").length;
   $("#alert-count").textContent = issues.length;
   $("#alert-count").style.cssText = crit ? "background:var(--critical);color:#fff" : "";
-  ({ resumen: renderSummary, cronograma: renderGantt, calendario: renderCalendar, cursos: renderCourses, docentes: renderTeachers, alertas: renderAlerts })[state.view](rows, issues);
+  ({ resumen: renderSummary, cronograma: renderGantt, semana: renderSemana, calendario: renderCalendar, cursos: renderCourses, docentes: renderTeachers, alertas: renderAlerts })[state.view](rows, issues);
 }
 
 // ------------------------------------------------------------------ resumen
@@ -328,6 +340,252 @@ function renderCalendar(rows) {
   $("#cal").querySelectorAll(".more").forEach((b) => b.addEventListener("click", () => openDay(b.dataset.date, byDate.get(b.dataset.date))));
 }
 
+// ------------------------------------------------------------------ semana y electivas
+const HOUR0 = 6, HOUR1 = 23, HPX = 44;
+const DAY_NAMES = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"];
+const weekStartOf = (iso) => { const d = parseDate(iso); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return isoOf(d); };
+const addDays = (iso, n) => { const d = parseDate(iso); d.setDate(d.getDate() + n); return isoOf(d); };
+const wdOf = (iso) => (parseDate(iso).getDay() + 6) % 7; // lunes = 0
+const overlap = (a, b) => mins(a.start) < mins(b.end) && mins(b.start) < mins(a.end);
+
+// Cohorte = grupo de estudiantes que toma junto los cursos obligatorios de un semestre
+function cohortKey(o) {
+  if (o.semester === "Electivas") return null;
+  return `${visiblePrograms(o).map((p) => PROGRAM_SHORT[p]).join("/")} · ${o.semester} · G${o.group}`;
+}
+const occupantKey = (o) => cohortKey(o) ?? `Electiva · ${o.course}`;
+
+function sessionsByDate(rows) {
+  const m = new Map();
+  for (const o of rows) for (const s of o.sessions) {
+    if (!m.has(s.date)) m.set(s.date, []);
+    m.get(s.date).push({ o, s });
+  }
+  return m;
+}
+
+function planSessions() {
+  const p = state.plan;
+  const out = { sessions: [], skipped: [] };
+  if (!p.days.length || !p.start || !p.end || p.start >= p.end || !p.from || !p.to || p.from > p.to) return out;
+  const hol = new Map(DATA.holidays.map((h) => [h.date, h.name]));
+  for (let d = p.from; d <= p.to; d = addDays(d, 1)) {
+    if (!p.days.includes(wdOf(d))) continue;
+    if (hol.has(d)) out.skipped.push({ date: d, name: hol.get(d) });
+    else out.sessions.push({ date: d, start: p.start, end: p.end });
+  }
+  return out;
+}
+
+function renderSemana(rows) {
+  const byDate = sessionsByDate(rows);
+  const plan = planSessions();
+  if (!state.week) {
+    const first = [...byDate.keys()].sort()[0];
+    state.week = weekStartOf(plan.sessions[0]?.date ?? first ?? "2027-01-04");
+  }
+  renderPlan(rows, byDate, plan);
+  renderHeat(rows);
+  renderWeekGrid(byDate, plan);
+}
+
+function renderPlan(rows, byDate, plan) {
+  const p = state.plan;
+  if (!p.days.length) {
+    $("#plan-summary").innerHTML = `<div class="plan-sum">Marca al menos un día para evaluar la franja.</div>`;
+    $("#plan-conflicts").innerHTML = "";
+    return;
+  }
+  if (!plan.sessions.length) {
+    $("#plan-summary").innerHTML = `<div class="plan-sum">La franja no produce sesiones: revisa horario y fechas.</div>`;
+    $("#plan-conflicts").innerHTML = "";
+    return;
+  }
+  const dur = (mins(p.end) - mins(p.start)) / 60;
+  const hours = plan.sessions.length * dur;
+  const conf = new Map();
+  for (const ps of plan.sessions) for (const { o, s } of byDate.get(ps.date) || []) {
+    if (!overlap(ps, s)) continue;
+    const k = occupantKey(o);
+    if (!conf.has(k)) conf.set(k, { key: k, elective: !cohortKey(o), programs: new Set(), courses: new Set(), dates: new Set() });
+    const c = conf.get(k);
+    visiblePrograms(o).forEach((x) => c.programs.add(x));
+    c.courses.add(o.course); c.dates.add(ps.date);
+  }
+  const list = [...conf.values()].sort((a, b) => a.elective - b.elective || b.dates.size - a.dates.size);
+  const cohorts = [...new Set(rows.filter((o) => cohortKey(o) && o.sessions.some((s) => s.date >= p.from && s.date <= p.to)).map(cohortKey))].sort();
+  const free = cohorts.filter((k) => !conf.has(k));
+  const clashDates = new Set(list.flatMap((c) => [...c.dates]));
+
+  $("#plan-summary").innerHTML = `<div class="plan-sum">
+    <b>${plan.sessions.length} sesiones · ${fmtH(hours)} h</b> ${hours !== 24 ? `<span style="color:var(--serious)">(una electiva suele tener 24 h)</span>` : ""}<br>
+    ${fmtDate(plan.sessions[0].date, true)} – ${fmtDate(plan.sessions.at(-1).date, true)}, ${p.start}–${p.end}
+    ${plan.skipped.length ? `<br><span style="color:var(--holiday-ink)">Sin clase por festivo: ${plan.skipped.map((x) => fmtDate(x.date, true)).join(", ")}</span>` : ""}
+    <br>${clashDates.size ? `<span class="sev critical" style="width:14px;height:14px;font-size:9px">!</span> Coincide con otros cursos en ${clashDates.size} de ${plan.sessions.length} sesiones` : `<span class="sev good" style="width:14px;height:14px;font-size:9px">✓</span> No coincide con ningún curso de los programas filtrados`}
+  </div>`;
+  $("#plan-conflicts").innerHTML = list.map((c) => `<div class="conf" data-date="${[...c.dates].sort()[0]}">
+      <div class="h"><span class="sev ${c.elective ? "warning" : "critical"}" aria-hidden="true">${c.elective ? "E" : "!"}</span>${esc(c.key)}<span class="n">${c.dates.size} ${c.dates.size === 1 ? "fecha" : "fechas"}</span></div>
+      <div class="d">${[...c.courses].map(esc).join(", ")} · ${[...c.dates].sort().map((d) => fmtDate(d)).join(", ")}</div>
+    </div>`).join("") +
+    (free.length ? `<div class="hint" style="margin:12px 0 0">Cohortes con clases en esas fechas que <b>no</b> se cruzan:</div><div class="free">${free.map((k) => `<span class="tag">${esc(k)}</span>`).join("")}</div>` : "");
+  $("#plan-conflicts").querySelectorAll(".conf").forEach((el) => el.addEventListener("click", () => { state.week = weekStartOf(el.dataset.date); update(); }));
+}
+
+function renderHeat(rows) {
+  const p = state.plan;
+  const from = p.from || "2027-01-01", to = p.to || "2027-07-31";
+  $("#heat-hint").textContent = `Número de cohortes con clase en cada hora y día, entre ${fmtDate(from)} y ${fmtDate(to)} (rango de fechas de la electiva). Las electivas existentes se ven en el detalle. Clic en una celda para marcar ese día.`;
+  const cells = Array.from({ length: HOUR1 - HOUR0 }, () => Array.from({ length: 7 }, () => ({ coh: new Set(), el: new Set() })));
+  for (const o of rows) for (const s of o.sessions) {
+    if (s.date < from || s.date > to) continue;
+    const wd = wdOf(s.date);
+    for (let h = HOUR0; h < HOUR1; h++) {
+      if (mins(s.start) < (h + 1) * 60 && h * 60 < mins(s.end)) {
+        const c = cells[h - HOUR0][wd];
+        const k = cohortKey(o);
+        if (k) c.coh.add(k); else c.el.add(o.course);
+      }
+    }
+  }
+  const max = Math.max(1, ...cells.flat().map((c) => c.coh.size));
+  const inPlan = (h, wd) => p.days.includes(wd) && p.start && p.end && mins(p.start) < (h + 1) * 60 && h * 60 < mins(p.end);
+  let html = `<div></div>${DAY_NAMES.map((d) => `<div class="hd">${d}</div>`).join("")}`;
+  cells.forEach((row, i) => {
+    const h = HOUR0 + i;
+    html += `<div class="hh">${h}:00</div>`;
+    row.forEach((c, wd) => {
+      const v = c.coh.size;
+      const pct = v ? 18 + (82 * v) / max : 0;
+      const bg = v ? `color-mix(in srgb, var(--accent) ${pct}%, var(--surface))` : "var(--surface-2)";
+      const fg = pct > 55 ? "#fff" : "var(--text-2)";
+      html += `<div class="c ${inPlan(h, wd) ? "sel" : ""}" data-h="${i}" data-wd="${wd}" style="background:${bg};color:${fg}">${v || (c.el.size ? "·" : "")}</div>`;
+    });
+  });
+  $("#heat").innerHTML = `<div class="heat">${html}</div><div class="heat-scale"><span>0</span><span class="bar"></span><span>${max} cohortes</span></div>`;
+  $("#heat").querySelectorAll(".c").forEach((el) => {
+    const c = cells[+el.dataset.h][+el.dataset.wd], h = HOUR0 + +el.dataset.h;
+    bindTip(el, () => `<div class="tt-title">${DAY_NAMES[+el.dataset.wd]} ${h}:00–${h + 1}:00</div>` +
+      (c.coh.size ? `<div>${[...c.coh].sort().map(esc).join("<br>")}</div>` : `<div style="color:var(--muted)">Ninguna cohorte con clase</div>`) +
+      (c.el.size ? `<div style="margin-top:4px;color:var(--text-2)">Electivas: ${[...c.el].map(esc).join(", ")}</div>` : ""));
+    el.addEventListener("click", () => {
+      const wd = +el.dataset.wd;
+      state.plan.days = state.plan.days.includes(wd) ? state.plan.days.filter((x) => x !== wd) : [...state.plan.days, wd].sort();
+      update();
+    });
+  });
+}
+
+function layoutLanes(items) {
+  items.sort((a, b) => mins(a.s.start) - mins(b.s.start) || mins(b.s.end) - mins(a.s.end));
+  let cluster = [], clusterEnd = -1;
+  const flush = () => { const n = Math.max(...cluster.map((x) => x.lane)) + 1; cluster.forEach((x) => { x.n = n; }); cluster = []; };
+  for (const it of items) {
+    if (mins(it.s.start) >= clusterEnd && cluster.length) { flush(); clusterEnd = -1; }
+    const ends = [];
+    cluster.forEach((x) => { ends[x.lane] = Math.max(ends[x.lane] ?? 0, mins(x.s.end)); });
+    let lane = 0;
+    while (ends[lane] !== undefined && ends[lane] > mins(it.s.start)) lane++;
+    it.lane = lane;
+    cluster.push(it);
+    clusterEnd = Math.max(clusterEnd, mins(it.s.end));
+  }
+  if (cluster.length) flush();
+  return items;
+}
+
+function renderWeekGrid(byDate, plan) {
+  const w = state.week;
+  const end = addDays(w, 6);
+  $("#wk-title").textContent = `Semana del ${fmtDate(w)} al ${fmtDate(end)}`;
+  $("#wk-prev").disabled = w <= "2027-01-01"; $("#wk-next").disabled = end >= "2027-07-31";
+  $("#wk-month").value = String(parseDate(addDays(w, 3)).getMonth());
+  const hol = new Map(DATA.holidays.map((h) => [h.date, h.name]));
+  const acad = new Map(DATA.academicDates.map((h) => [h.date, h.name]));
+  const H = (HOUR1 - HOUR0) * HPX;
+  const y = (t) => ((mins(t) - HOUR0 * 60) / 60) * HPX;
+
+  let html = `<div class="wh"></div>`;
+  for (let i = 0; i < 7; i++) {
+    const d = addDays(w, i);
+    const note = hol.get(d) || acad.get(d);
+    html += `<div class="wh ${hol.has(d) ? "hol" : ""}">${DAY_NAMES[i]} ${parseDate(d).getDate()}${note ? `<small title="${esc(note)}">${esc(note)}</small>` : ""}</div>`;
+  }
+  html += `<div class="times" style="height:${H}px">${Array.from({ length: HOUR1 - HOUR0 }, (_, i) => i ? `<span style="top:${i * HPX}px">${HOUR0 + i}:00</span>` : "").join("")}</div>`;
+  // Grupos del mismo curso a la misma hora se dibujan como un solo bloque (G1·G2·G3)
+  const days = [];
+  for (let i = 0; i < 7; i++) {
+    const d = addDays(w, i);
+    const merged = new Map();
+    for (const { o, s } of byDate.get(d) || []) {
+      const k = [o.course.toLowerCase(), o.semester, visiblePrograms(o).join(), s.start, s.end].join("|");
+      if (!merged.has(k)) merged.set(k, { s, list: [] });
+      merged.get(k).list.push({ o, s });
+    }
+    const props = plan.sessions.filter((ps) => ps.date === d);
+    const items = [...merged.values()];
+    items.forEach((it) => { it.clash = props.some((ps) => overlap(ps, it.s)); });
+    props.forEach((ps) => items.push({ prop: true, s: ps }));
+    layoutLanes(items);
+    days.push({ d, items, lanes: Math.max(1, ...items.map((x) => x.n || 1)) });
+  }
+  $("#week").style.gridTemplateColumns = `44px ${days.map((x) => `minmax(${58 * x.lanes}px, ${x.lanes}fr)`).join(" ")}`;
+  const blocks = [];
+  for (const { d, items } of days) {
+    html += `<div class="col ${hol.has(d) ? "hol" : ""}" style="height:${H}px;--hpx:${HPX}px">`;
+    for (const it of items) {
+      const top = Math.max(0, y(it.s.start)), height = Math.max(16, y(it.s.end) - top - 1);
+      const pos = `top:${top}px;height:${height}px;left:calc(${(it.lane / it.n) * 100}% + 1px);width:calc(${100 / it.n}% - 2px)`;
+      if (it.prop) {
+        html += `<div class="blk prop" style="${pos}"><span class="t">${it.s.start}–${it.s.end}</span><br><b>Electiva propuesta</b></div>`;
+        continue;
+      }
+      const o = it.list[0].o;
+      const groups = o.semester === "Electivas" ? "electiva" : "G" + it.list.map((x) => esc(x.o.group)).sort().join("·G");
+      html += `<div class="blk ${it.clash ? "clash" : ""}" data-b="${blocks.length}" style="${pos};--c:${color(mainProgram(o))}">
+        <span class="t">${it.s.start}–${it.s.end}</span> <span class="p">${visiblePrograms(o).map((p) => PROGRAM_SHORT[p]).join("·")}</span><br>
+        ${esc(o.course)} · ${groups}</div>`;
+      blocks.push(it);
+    }
+    html += `</div>`;
+  }
+  $("#week").innerHTML = html;
+  $("#week").querySelectorAll(".blk[data-b]").forEach((el) => {
+    const it = blocks[+el.dataset.b], o = it.list[0].o, s = it.s;
+    bindTip(el, () => it.list.length === 1
+      ? `${offeringTip(o)}<div class="row"><span class="k">Esta sesión</span><b>${s.start}–${s.end}</b></div><div class="row"><span class="k">Aula</span><span>${esc(s.room || "—")}</span></div>${it.clash ? `<div style="color:var(--critical);margin-top:4px">Coincide con la electiva propuesta</div>` : ""}`
+      : `<div class="tt-title">${esc(o.course)}</div><div class="row"><span class="k">${visiblePrograms(o).map(pill).join(" ")}</span><b>${s.start}–${s.end}</b></div>` +
+        it.list.map((x) => `<div class="row"><span class="k">Grupo ${esc(x.o.group)}</span><span>${x.o.teachers.length ? esc(x.o.teachers.join(", ")) : "por asignar"} · ${esc((x.s.room || "—").replace("Poblado ", ""))}</span></div>`).join("") +
+        (it.clash ? `<div style="color:var(--critical);margin-top:4px">Coincide con la electiva propuesta</div>` : ""));
+    el.addEventListener("click", () => it.list.length === 1 ? openDetail(o) : openDay(it.s.date, it.list));
+  });
+}
+
+function initPlanner() {
+  const f = $("#plan-form");
+  $("#wk-month").innerHTML = MONTHS.slice(0, 7).map((m, i) => `<option value="${i}">${m[0].toUpperCase() + m.slice(1)}</option>`).join("");
+  $("#wk-month").addEventListener("change", (e) => { state.week = weekStartOf(isoOf(new Date(2027, +e.target.value, 1))); update(); });
+  $("#wk-prev").addEventListener("click", () => { state.week = addDays(state.week, -7); update(); });
+  $("#wk-next").addEventListener("click", () => { state.week = addDays(state.week, 7); update(); });
+  f.addEventListener("change", () => {
+    state.plan = {
+      days: [...f.querySelectorAll(".days input:checked")].map((i) => +i.value),
+      start: f.start.value, end: f.end.value, from: f.from.value, to: f.to.value,
+    };
+    if (state.plan.days.length) {
+      const first = planSessions().sessions[0];
+      if (first && (first.date < state.week || first.date > addDays(state.week, 6)) && planSessions().sessions.every((s) => s.date < state.week || s.date > addDays(state.week, 6))) state.week = weekStartOf(first.date);
+    }
+    update();
+  });
+  $("#plan-clear").addEventListener("click", () => { state.plan.days = []; update(); });
+}
+
+function syncPlanForm() {
+  const f = $("#plan-form"), p = state.plan;
+  f.querySelectorAll(".days input").forEach((i) => { i.checked = p.days.includes(+i.value); });
+  f.start.value = p.start; f.end.value = p.end; f.from.value = p.from; f.to.value = p.to;
+}
+
 // ------------------------------------------------------------------ cursos
 const COURSE_COLS = [
   { key: "programs", label: "Programa", val: (o) => o.programs.join(","), html: (o) => `<div class="pills">${o.programs.map(pill).join("")}</div>` },
@@ -485,6 +743,7 @@ async function init() {
   $("#footer").innerHTML = `Datos generados el ${gen.getDate()} de ${MONTHS[gen.getMonth()]} de ${gen.getFullYear()} a partir de los archivos de programación académica (SIS: MCDA, ECD, MIA · calendario EDS). Los nombres de cursos y docentes provienen de esos archivos.`;
   readHash();
   buildFilters();
+  initPlanner();
   $("#cal-prev").addEventListener("click", () => { state.month--; update(); });
   $("#cal-next").addEventListener("click", () => { state.month++; update(); });
   $("#csv-btn").addEventListener("click", downloadCSV);

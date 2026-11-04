@@ -21,6 +21,7 @@
       <nav class="tabs" role="tablist">
         <button role="tab" data-view="resumen" aria-selected="true">Resumen</button>
         <button role="tab" data-view="cronograma" aria-selected="false">Cronograma</button>
+        <button role="tab" data-view="semana" aria-selected="false">Semana y electivas</button>
         <button role="tab" data-view="calendario" aria-selected="false">Calendario</button>
         <button role="tab" data-view="cursos" aria-selected="false">Cursos</button>
         <button role="tab" data-view="docentes" aria-selected="false">Docentes</button>
@@ -65,6 +66,55 @@
             <span><span class="swatch" style="background:repeating-linear-gradient(45deg,var(--muted) 0 2px,transparent 2px 4px)"></span>Trabajo dirigido (sin sesiones fijas)</span>
           </div>
           <div class="gantt" id="gantt"></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-semana" hidden>
+        <div class="week-layout">
+          <div class="card planner">
+           <div class="planner-grid">
+            <div>
+            <h2>Probar una electiva</h2>
+            <p class="hint">Elige días, horario y rango de fechas. Se dibuja en la semana (rayada) y abajo se listan las cohortes y electivas con las que coincide.</p>
+            <form id="plan-form" autocomplete="off">
+              <fieldset class="days">
+                <legend>Días</legend>
+                <label><input type="checkbox" value="0">Lu</label><label><input type="checkbox" value="1">Ma</label><label><input type="checkbox" value="2">Mi</label><label><input type="checkbox" value="3">Ju</label><label><input type="checkbox" value="4">Vi</label><label><input type="checkbox" value="5">Sá</label><label><input type="checkbox" value="6">Do</label>
+              </fieldset>
+              <div class="row2">
+                <label>Desde<input type="time" name="start" step="1800" value="18:00"></label>
+                <label>Hasta<input type="time" name="end" step="1800" value="21:00"></label>
+              </div>
+              <div class="row2">
+                <label>Fecha inicial<input type="date" name="from" min="2027-01-01" max="2027-07-31" value="2027-02-01"></label>
+                <label>Fecha final<input type="date" name="to" min="2027-01-01" max="2027-07-31" value="2027-03-31"></label>
+              </div>
+              <button type="button" class="icon-btn" id="plan-clear">Quitar días</button>
+            </form>
+            </div>
+            <div>
+            <h3 class="sub-h" style="margin-top:0">Coincidencias</h3>
+            <div id="plan-summary"></div>
+            <div id="plan-conflicts" class="conf-list"></div>
+            </div>
+            <div>
+            <h3 class="sub-h" style="margin-top:0">Ocupación por franja</h3>
+            <p class="hint" id="heat-hint"></p>
+            <div id="heat"></div>
+            </div>
+           </div>
+          </div>
+          <div class="card week-card">
+            <div class="cal-head">
+              <button class="icon-btn" id="wk-prev" type="button" aria-label="Semana anterior">←</button>
+              <h2 id="wk-title"></h2>
+              <button class="icon-btn" id="wk-next" type="button" aria-label="Semana siguiente">→</button>
+              <label class="sr-only" for="wk-month">Ir al mes</label>
+              <select id="wk-month" class="icon-btn"></select>
+            </div>
+            <p class="hint">Los cursos que coinciden en horario se dibujan lado a lado. Clic en un bloque para ver el detalle.</p>
+            <div class="wk-scroll"><div class="wk" id="week"></div></div>
+          </div>
         </div>
       </section>
 

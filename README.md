@@ -7,7 +7,10 @@ Tablero web de la programación académica de:
 - **ECD** — Especialización en Ciencia de Datos y Analítica
 - **EDS** — Especialización en Desarrollo de Software
 
-Vistas: resumen por programa, cronograma (Gantt) del semestre, calendario mensual,
+Vistas: resumen por programa, cronograma (Gantt) del semestre, **semana y electivas**
+(calendario semanal por horas donde los cursos simultáneos se ven lado a lado, con un
+planificador para probar la franja de una electiva y ver con qué cohortes y electivas
+coincide, más un mapa de ocupación por día y hora), calendario mensual,
 tabla de cursos (con descarga CSV de todas las sesiones), carga docente y alertas
 automáticas (cruces de aula/docente/cohorte, sesiones en festivo, horas incompletas,
 docentes y aulas por asignar). Los filtros se guardan en la URL, así que un enlace

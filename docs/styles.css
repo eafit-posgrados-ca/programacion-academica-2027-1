@@ -251,5 +251,58 @@ dialog::backdrop { background: rgba(0, 0, 0, .35); }
 .facts .k { font-size: 12px; color: var(--muted); }
 .facts .v { font-weight: 500; }
 
+/* ---------- semana y electivas */
+.week-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+.planner-grid { display: grid; grid-template-columns: 300px minmax(0, 1fr) 320px; gap: 24px; align-items: start; }
+@media (max-width: 1100px) { .planner-grid { grid-template-columns: 1fr 1fr; } .planner-grid > :last-child { grid-column: 1 / -1; } }
+@media (max-width: 700px) { .planner-grid { grid-template-columns: 1fr; } }
+.conf-list { max-height: 440px; overflow-y: auto; }
+.planner form { display: grid; gap: 10px; margin-bottom: 12px; }
+.planner fieldset { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 4px; }
+.planner legend, .planner label { font-size: 12px; color: var(--text-2); }
+.planner legend { margin-bottom: 4px; }
+.days label { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; padding: 5px 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); cursor: pointer; color: var(--text); font-size: 13px; }
+.days input { position: absolute; opacity: 0; pointer-events: none; }
+.days label:has(input:checked) { background: var(--text); color: var(--surface); border-color: var(--text); }
+.days label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.row2 label { display: grid; gap: 3px; }
+.row2 input { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 5px 8px; min-width: 0; }
+#plan-clear { justify-self: start; }
+.plan-sum { background: var(--surface-2); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 13px; }
+.plan-sum b { font-size: 15px; }
+.conf { border-bottom: 1px solid var(--border); padding: 8px 0; cursor: pointer; }
+.conf:hover { background: var(--surface-2); }
+.conf .h { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+.conf .h .n { margin-left: auto; font-weight: 500; color: var(--text-2); font-size: 12px; white-space: nowrap; }
+.conf .d { font-size: 12px; color: var(--text-2); margin-top: 2px; padding-left: 26px; }
+.free { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+.sub-h { font-size: 14px; margin: 20px 0 2px; }
+.heat { display: grid; grid-template-columns: 40px repeat(7, 1fr); gap: 2px; font-size: 11px; }
+.heat .hh { color: var(--muted); text-align: right; padding-right: 4px; font-variant-numeric: tabular-nums; line-height: 20px; }
+.heat .hd { color: var(--text-2); text-align: center; }
+.heat .c { height: 20px; border-radius: 3px; display: grid; place-items: center; font-variant-numeric: tabular-nums; cursor: pointer; }
+.heat .c.sel { box-shadow: inset 0 0 0 2px var(--text); }
+.heat-scale { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); margin-top: 6px; }
+.heat-scale .bar { flex: 1; height: 8px; border-radius: 4px; background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 12%, var(--surface)), var(--accent)); }
+
+.week-card .cal-head h2 { min-width: 230px; }
+#wk-month { margin-left: auto; }
+.wk-scroll { overflow-x: auto; }
+.wk { display: grid; grid-template-columns: 44px repeat(7, minmax(86px, 1fr)); }
+.wk .wh { position: sticky; top: 0; font-size: 12px; color: var(--text-2); padding: 6px 4px; border-bottom: 1px solid var(--axis); text-align: center; background: var(--surface); z-index: 2; }
+.wk .wh.hol { color: var(--holiday-ink); }
+.wk .wh small { display: block; font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wk .times { position: relative; }
+.wk .times span { position: absolute; right: 6px; font-size: 11px; color: var(--muted); transform: translateY(-50%); font-variant-numeric: tabular-nums; }
+.wk .col { position: relative; border-left: 1px solid var(--grid); background-image: linear-gradient(var(--grid) 1px, transparent 1px); background-size: 100% var(--hpx); }
+.wk .col.hol { background-color: var(--holiday); }
+.blk { position: absolute; border-radius: 4px; padding: 2px 4px; font-size: 11px; line-height: 1.25; overflow: hidden; cursor: pointer; background: color-mix(in srgb, var(--c) 18%, var(--surface)); border-left: 3px solid var(--c); box-shadow: 0 0 0 1px var(--surface); }
+.blk:hover { background: color-mix(in srgb, var(--c) 30%, var(--surface)); z-index: 1; }
+.blk .t { color: var(--text-2); font-variant-numeric: tabular-nums; }
+.blk .p { font-weight: 700; }
+.blk.clash { box-shadow: 0 0 0 1px var(--surface), inset 0 0 0 1.5px var(--critical); }
+.blk.prop { background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--text) 10%, var(--surface)) 0 5px, var(--surface) 5px 10px); border-left-color: var(--text); border: 1.5px dashed var(--text); }
+
 footer { color: var(--muted); font-size: 12px; padding: 24px 0; border-top: 1px solid var(--border); }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
