@@ -28,7 +28,10 @@ PROGRAMS = [
     {"id": "MMA", "name": "Maestría en Matemáticas Aplicadas"},
     {"id": "DMA", "name": "Doctorado en Matemáticas Aplicadas"},
 ]
-# Hoja del SIS -> programa (MCDA se reparte entre MCDA y ECD según el código)
+# Cursos de la hoja MIA que también toma la ECD. Es propio de 2027-1: en este periodo
+# la ECD no comparte con MCDA (los SI6xxx/NM6xxx de esa hoja son pregrado combinado).
+ECD_SHARED = {"MIA": {"NM7001", "NM7002", "SI7009"}}
+# Hoja del SIS -> programa
 SHEET_PROGRAM = {"MIA": "MIA", "MMA": "MMA", "DIM": "DMA"}
 # Hojas sin bloques por semestre: los estudiantes eligen cursos de la oferta
 OFFER = "Cursos del programa"
@@ -68,8 +71,6 @@ def program_for_code(code, sheet, level=None):
         return None if level == "PREG" else SHEET_PROGRAM[sheet]
     if re.match(r"^(SI|NM)7", code):
         return "MCDA"
-    if re.match(r"^(SI|NM)6", code):
-        return "ECD"
     return None  # pregrado / doctorado combinados
 
 
@@ -170,6 +171,8 @@ def parse_sis(path, holidays):
                               key=[p["id"] for p in PROGRAMS].index)
             if not programs and sheet in SHEET_PROGRAM:
                 programs = [SHEET_PROGRAM[sheet]]  # curso de pregrado ofrecido en la hoja del programa
+            if any(c["code"] in ECD_SHARED.get(sheet, ()) for c in codes):
+                programs = sorted(set(programs) | {"ECD"}, key=[p["id"] for p in PROGRAMS].index)
             # Nombre: el del código de posgrado principal
             main = next((r for r in rows if program_for_code(r[C_CODE], sheet, r[C_GRADO]) in ("MIA", "MCDA", "MMA", "DMA")),
                         next((r for r in rows if program_for_code(r[C_CODE], sheet, r[C_GRADO])), rows[0]))

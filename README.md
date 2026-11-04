@@ -44,9 +44,11 @@ git add docs/data/programacion.json && git commit -m "Actualiza programación" &
 Qué lee el script:
 
 - **Excel del SIS** (`--sis`): hojas `MCDA`, `MIA`, `MMA` y `DIM`. Las filas con el mismo
-  *ID Sección Combinada* se agrupan en un solo curso. Los códigos `SI7xxx/NM7xxx`
-  se asignan a MCDA, `SI6xxx/NM6xxx` a ECD; los demás (pregrado, doctorado) se
-  muestran como códigos combinados. Las sesiones se generan con cada día de la
+  *ID Sección Combinada* se agrupan en un solo curso. En la hoja MCDA los códigos
+  `SI7xxx/NM7xxx` se asignan a MCDA y los demás (pregrado, doctorado) se muestran
+  como códigos combinados. En 2027-1 la ECD comparte cursos con la MIA, no con MCDA:
+  cuáles se define en `ECD_SHARED` al inicio de `scripts/build_data.py` (revísalo en
+  cada periodo). Las sesiones se generan con cada día de la
   semana entre la fecha inicial y final de cada franja, omitiendo festivos.
   En MMA y DMA los cursos sin aula con franjas de relleno (domingo, 30 min o
   metodología de proyecto/dirigido/examen) se muestran como trabajo dirigido, sin

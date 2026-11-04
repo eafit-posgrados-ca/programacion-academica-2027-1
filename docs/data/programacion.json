@@ -1,6 +1,6 @@
 {
  "period": "2027-1",
- "generated": "2026-11-04T15:44",
+ "generated": "2026-11-04T15:52",
  "programs": [
   {
    "id": "MIA",
@@ -97,8 +97,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Fundamentos Ciencias de Datos",
    "codes": [
@@ -106,7 +105,7 @@
      "code": "SI6001",
      "level": "PREG",
      "class": 4022,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "SI7008",
@@ -186,8 +185,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Fundamentos Ciencias de Datos",
    "codes": [
@@ -195,7 +193,7 @@
      "code": "SI6001",
      "level": "PREG",
      "class": 4247,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "SI7008",
@@ -269,8 +267,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Fundamentos Ciencias de Datos",
    "codes": [
@@ -278,7 +275,7 @@
      "code": "SI6001",
      "level": "PREG",
      "class": 5741,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "SI7008",
@@ -350,8 +347,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Matemáticas Aplicada",
    "codes": [
@@ -359,7 +355,7 @@
      "code": "NM6001",
      "level": "PREG",
      "class": 4005,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "NM7001",
@@ -439,8 +435,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Matemáticas Aplicada",
    "codes": [
@@ -448,7 +443,7 @@
      "code": "NM6001",
      "level": "PREG",
      "class": 4116,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "NM7001",
@@ -522,8 +517,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Matemáticas Aplicada",
    "codes": [
@@ -531,7 +525,7 @@
      "code": "NM6001",
      "level": "PREG",
      "class": 5486,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "NM7001",
@@ -603,8 +597,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Estadística Aplicada",
    "codes": [
@@ -612,7 +605,7 @@
      "code": "NM6002",
      "level": "PREG",
      "class": 4006,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "NM7002",
@@ -692,8 +685,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Estadística Aplicada",
    "codes": [
@@ -701,7 +693,7 @@
      "code": "NM6002",
      "level": "PREG",
      "class": 4117,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "NM7002",
@@ -775,8 +767,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Estadística Aplicada",
    "codes": [
@@ -784,7 +775,7 @@
      "code": "NM6002",
      "level": "PREG",
      "class": 5487,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "NM7002",
@@ -856,8 +847,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Aprendizaje Automático",
    "codes": [
@@ -865,7 +855,7 @@
      "code": "SI6002",
      "level": "PREG",
      "class": 4023,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "SI7009",
@@ -945,8 +935,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Aprendizaje Automático",
    "codes": [
@@ -954,7 +943,7 @@
      "code": "SI6002",
      "level": "PREG",
      "class": 4248,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "SI7009",
@@ -1028,8 +1017,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Aprendizaje Automático",
    "codes": [
@@ -1037,7 +1025,7 @@
      "code": "SI6002",
      "level": "PREG",
      "class": 5526,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "SI7009",
@@ -1109,8 +1097,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Alm. y Proc. de grandes datos",
    "codes": [
@@ -1118,7 +1105,7 @@
      "code": "SI6003",
      "level": "PREG",
      "class": 4020,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "SI7006",
@@ -1198,8 +1185,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Alm. y Proc. de grandes datos",
    "codes": [
@@ -1207,7 +1193,7 @@
      "code": "SI6003",
      "level": "PREG",
      "class": 4245,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "SI7006",
@@ -1279,8 +1265,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Alm. y Proc. de grandes datos",
    "codes": [
@@ -1288,7 +1273,7 @@
      "code": "SI6003",
      "level": "PREG",
      "class": 5527,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "SI7006",
@@ -1360,8 +1345,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Visualización de Datos",
    "codes": [
@@ -1369,7 +1353,7 @@
      "code": "SI6004",
      "level": "PREG",
      "class": 4021,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "SI7007",
@@ -1443,8 +1427,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Visualización de Datos",
    "codes": [
@@ -1452,7 +1435,7 @@
      "code": "SI6004",
      "level": "PREG",
      "class": 4246,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "SI7007",
@@ -1526,8 +1509,7 @@
    "source": "sis",
    "sheet": "MCDA",
    "programs": [
-    "MCDA",
-    "ECD"
+    "MCDA"
    ],
    "course": "Visualización de Datos",
    "codes": [
@@ -1535,7 +1517,7 @@
      "code": "SI6004",
      "level": "PREG",
      "class": 5528,
-     "program": "ECD"
+     "program": null
     },
     {
      "code": "SI7007",
@@ -2728,7 +2710,8 @@
    "source": "sis",
    "sheet": "MIA",
    "programs": [
-    "MIA"
+    "MIA",
+    "ECD"
    ],
    "course": "Aprendizaje Automático",
    "codes": [
@@ -2877,7 +2860,8 @@
    "source": "sis",
    "sheet": "MIA",
    "programs": [
-    "MIA"
+    "MIA",
+    "ECD"
    ],
    "course": "Matemáticas Aplicada",
    "codes": [
@@ -2952,7 +2936,8 @@
    "source": "sis",
    "sheet": "MIA",
    "programs": [
-    "MIA"
+    "MIA",
+    "ECD"
    ],
    "course": "Estadística Aplicada",
    "codes": [
