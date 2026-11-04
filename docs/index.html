@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programación Posgrados 2027-1</title>
+  <meta name="description" content="Tablero de la programación académica 2027-1: Maestría en IA, Maestría y Especialización en Ciencia de Datos, Especialización en Desarrollo de Software.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='3' y='6' width='26' height='23' rx='4' fill='%232a78d6'/><rect x='3' y='6' width='26' height='7' rx='3' fill='%23184f95'/><rect x='8' y='17' width='6' height='4' rx='1' fill='white'/><rect x='17' y='17' width='8' height='4' rx='1' fill='white'/><rect x='8' y='23' width='10' height='3' rx='1' fill='white'/></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="title-row">
+        <div>
+          <h1>Programación académica <span id="period">2027-1</span></h1>
+          <p class="subtitle">Posgrados · Escuela de Ciencias Aplicadas e Ingeniería</p>
+        </div>
+        <button class="icon-btn" id="theme-btn" type="button" aria-label="Cambiar tema">◐ Tema</button>
+      </div>
+      <nav class="tabs" role="tablist">
+        <button role="tab" data-view="resumen" aria-selected="true">Resumen</button>
+        <button role="tab" data-view="cronograma" aria-selected="false">Cronograma</button>
+        <button role="tab" data-view="calendario" aria-selected="false">Calendario</button>
+        <button role="tab" data-view="cursos" aria-selected="false">Cursos</button>
+        <button role="tab" data-view="docentes" aria-selected="false">Docentes</button>
+        <button role="tab" data-view="alertas" aria-selected="false">Alertas <span class="count" id="alert-count"></span></button>
+      </nav>
+    </header>
+
+    <div class="filters" id="filters">
+      <div id="program-chips" style="display:contents"></div>
+      <label class="sr-only" for="f-semester">Semestre</label>
+      <select id="f-semester">
+        <option value="">Todos los semestres</option>
+      </select>
+      <label class="sr-only" for="f-search">Buscar</label>
+      <input type="search" id="f-search" placeholder="Buscar curso, código, docente o aula…">
+    </div>
+
+    <main>
+      <section class="view" id="view-resumen">
+        <div class="grid kpis" id="kpis"></div>
+        <div class="grid programs" id="program-cards"></div>
+        <div class="grid two-col">
+          <div class="card">
+            <h2>Horas de clase por semana</h2>
+            <p class="hint">Horas presenciales programadas en cada semana (lunes a domingo), una franja por programa con la misma escala. Los cursos compartidos entre MCDA y ECD cuentan en ambas franjas.</p>
+            <div class="weekly" id="weekly"></div>
+          </div>
+          <div class="card">
+            <h2>Festivos y fechas académicas</h2>
+            <p class="hint">Según el calendario de posgrados 2027-1.</p>
+            <ul class="dates-list" id="dates-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-cronograma" hidden>
+        <div class="card">
+          <h2>Cronograma del semestre</h2>
+          <p class="hint">Cada barra va de la primera a la última sesión del curso; las marcas son los días de clase. Clic en un curso para ver el detalle.</p>
+          <div class="legend">
+            <span><span class="swatch hol"></span>Festivo</span>
+            <span><span class="swatch" style="background:repeating-linear-gradient(45deg,var(--muted) 0 2px,transparent 2px 4px)"></span>Trabajo dirigido (sin sesiones fijas)</span>
+          </div>
+          <div class="gantt" id="gantt"></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-calendario" hidden>
+        <div class="card">
+          <div class="cal-head">
+            <button class="icon-btn" id="cal-prev" type="button" aria-label="Mes anterior">←</button>
+            <h2 id="cal-title"></h2>
+            <button class="icon-btn" id="cal-next" type="button" aria-label="Mes siguiente">→</button>
+          </div>
+          <div class="cal" id="cal"></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-cursos" hidden>
+        <div class="card">
+          <div class="toolbar">
+            <p class="hint" id="courses-hint"></p>
+            <button class="icon-btn" id="csv-btn" type="button">Descargar CSV</button>
+          </div>
+          <div class="table-wrap"><table id="courses-table"></table></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-docentes" hidden>
+        <div class="card">
+          <h2>Carga docente</h2>
+          <p class="hint">Horas de clase programadas por docente en los cursos filtrados.</p>
+          <div class="table-wrap"><table id="teachers-table"></table></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-alertas" hidden>
+        <div class="card">
+          <h2>Alertas de programación</h2>
+          <p class="hint">Revisiones automáticas: cruces de horario, festivos, horas incompletas y asignaciones pendientes.</p>
+          <div id="alerts"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+  </div>
+
+  <div class="tooltip" id="tooltip" hidden></div>
+  <dialog id="detail"></dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

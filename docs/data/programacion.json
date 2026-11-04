@@ -1,0 +1,4961 @@
+{
+ "period": "2027-1",
+ "generated": "2026-11-04T14:43",
+ "programs": [
+  {
+   "id": "MIA",
+   "name": "Maestría en Inteligencia Artificial"
+  },
+  {
+   "id": "MCDA",
+   "name": "Maestría en Ciencia de Datos y Analítica"
+  },
+  {
+   "id": "ECD",
+   "name": "Especialización en Ciencia de Datos y Analítica"
+  },
+  {
+   "id": "EDS",
+   "name": "Especialización en Desarrollo de Software"
+  }
+ ],
+ "holidays": [
+  {
+   "date": "2027-01-01",
+   "name": "Año Nuevo"
+  },
+  {
+   "date": "2027-01-11",
+   "name": "Reyes Magos (trasladado)"
+  },
+  {
+   "date": "2027-03-22",
+   "name": "San José (trasladado)"
+  },
+  {
+   "date": "2027-03-25",
+   "name": "Jueves Santo"
+  },
+  {
+   "date": "2027-03-26",
+   "name": "Viernes Santo"
+  },
+  {
+   "date": "2027-05-01",
+   "name": "Día del Trabajo"
+  },
+  {
+   "date": "2027-05-10",
+   "name": "Ascensión (trasladado)"
+  },
+  {
+   "date": "2027-05-31",
+   "name": "Corpus Christi (trasladado)"
+  },
+  {
+   "date": "2027-06-07",
+   "name": "Sagrado Corazón (trasladado)"
+  },
+  {
+   "date": "2027-07-05",
+   "name": "San Pedro y San Pablo (trasladado)"
+  },
+  {
+   "date": "2027-07-20",
+   "name": "Independencia"
+  }
+ ],
+ "academicDates": [
+  {
+   "date": "2027-05-27",
+   "name": "Fecha máxima de notas para grados en junio"
+  },
+  {
+   "date": "2027-06-01",
+   "name": "Fecha límite para reportar en EAFIT Interactiva las notas al 100%"
+  },
+  {
+   "date": "2027-06-01",
+   "name": "Paz y salvo académico y financiero para grado"
+  },
+  {
+   "date": "2027-06-02",
+   "name": "Balance académico pregrado"
+  }
+ ],
+ "offerings": [
+  {
+   "id": "MCDA-SI7008-1-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Fundamentos Ciencias de Datos",
+   "codes": [
+    {
+     "code": "SI6001",
+     "level": "PREG",
+     "class": 4022,
+     "program": "ECD"
+    },
+    {
+     "code": "SI7008",
+     "level": "MSTR",
+     "class": 5570,
+     "program": "MCDA"
+    },
+    {
+     "code": "ST1804",
+     "level": "PREG",
+     "class": 5505,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-15",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 204",
+     "teacher": "Jorge Ivan Padilla Buritica"
+    },
+    {
+     "date": "2027-01-16",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 204",
+     "teacher": "Jorge Ivan Padilla Buritica"
+    },
+    {
+     "date": "2027-01-22",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 204",
+     "teacher": "Jorge Ivan Padilla Buritica"
+    },
+    {
+     "date": "2027-01-23",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 204",
+     "teacher": "Jorge Ivan Padilla Buritica"
+    },
+    {
+     "date": "2027-01-29",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 204",
+     "teacher": "Jorge Ivan Padilla Buritica"
+    },
+    {
+     "date": "2027-01-30",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 204",
+     "teacher": "Jorge Ivan Padilla Buritica"
+    }
+   ],
+   "start": "2027-01-15",
+   "end": "2027-01-30",
+   "teachers": [
+    "Jorge Ivan Padilla Buritica"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 204"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7008-2-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Fundamentos Ciencias de Datos",
+   "codes": [
+    {
+     "code": "SI6001",
+     "level": "PREG",
+     "class": 4247,
+     "program": "ECD"
+    },
+    {
+     "code": "SI7008",
+     "level": "MSTR",
+     "class": 5571,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-15",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "German Adolfo Montoya Orozco"
+    },
+    {
+     "date": "2027-01-16",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "German Adolfo Montoya Orozco"
+    },
+    {
+     "date": "2027-01-22",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "German Adolfo Montoya Orozco"
+    },
+    {
+     "date": "2027-01-23",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "German Adolfo Montoya Orozco"
+    },
+    {
+     "date": "2027-01-29",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "German Adolfo Montoya Orozco"
+    },
+    {
+     "date": "2027-01-30",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "German Adolfo Montoya Orozco"
+    }
+   ],
+   "start": "2027-01-15",
+   "end": "2027-01-30",
+   "teachers": [
+    "German Adolfo Montoya Orozco"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 302"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7008-3-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Fundamentos Ciencias de Datos",
+   "codes": [
+    {
+     "code": "SI6001",
+     "level": "PREG",
+     "class": 5741,
+     "program": "ECD"
+    },
+    {
+     "code": "SI7008",
+     "level": "MSTR",
+     "class": 5672,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "3",
+   "section": "3",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-15",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-01-16",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-01-22",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-01-23",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-01-29",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-01-30",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    }
+   ],
+   "start": "2027-01-15",
+   "end": "2027-01-30",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 14 Aula 201"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-NM7001-1-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Matemáticas Aplicada",
+   "codes": [
+    {
+     "code": "NM6001",
+     "level": "PREG",
+     "class": 4005,
+     "program": "ECD"
+    },
+    {
+     "code": "NM7001",
+     "level": "MSTR",
+     "class": 5572,
+     "program": "MCDA"
+    },
+    {
+     "code": "CM0936",
+     "level": "PREG",
+     "class": 5201,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-05",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "Henry Giovanny Velasco Vera"
+    },
+    {
+     "date": "2027-02-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "Henry Giovanny Velasco Vera"
+    },
+    {
+     "date": "2027-02-12",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "Henry Giovanny Velasco Vera"
+    },
+    {
+     "date": "2027-02-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "Henry Giovanny Velasco Vera"
+    },
+    {
+     "date": "2027-02-19",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "Henry Giovanny Velasco Vera"
+    },
+    {
+     "date": "2027-02-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "Henry Giovanny Velasco Vera"
+    }
+   ],
+   "start": "2027-02-05",
+   "end": "2027-02-20",
+   "teachers": [
+    "Henry Giovanny Velasco Vera"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 302"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-NM7001-2-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Matemáticas Aplicada",
+   "codes": [
+    {
+     "code": "NM6001",
+     "level": "PREG",
+     "class": 4116,
+     "program": "ECD"
+    },
+    {
+     "code": "NM7001",
+     "level": "MSTR",
+     "class": 5573,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-05",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 403",
+     "teacher": "Diego Fernando Fonseca Valero"
+    },
+    {
+     "date": "2027-02-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 403",
+     "teacher": "Diego Fernando Fonseca Valero"
+    },
+    {
+     "date": "2027-02-12",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 403",
+     "teacher": "Diego Fernando Fonseca Valero"
+    },
+    {
+     "date": "2027-02-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 403",
+     "teacher": "Diego Fernando Fonseca Valero"
+    },
+    {
+     "date": "2027-02-19",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 403",
+     "teacher": "Diego Fernando Fonseca Valero"
+    },
+    {
+     "date": "2027-02-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 403",
+     "teacher": "Diego Fernando Fonseca Valero"
+    }
+   ],
+   "start": "2027-02-05",
+   "end": "2027-02-20",
+   "teachers": [
+    "Diego Fernando Fonseca Valero"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 403"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-NM7001-3-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Matemáticas Aplicada",
+   "codes": [
+    {
+     "code": "NM6001",
+     "level": "PREG",
+     "class": 5486,
+     "program": "ECD"
+    },
+    {
+     "code": "NM7001",
+     "level": "MSTR",
+     "class": 5675,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "3",
+   "section": "3",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-05",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-12",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-19",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    }
+   ],
+   "start": "2027-02-05",
+   "end": "2027-02-20",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 14 Aula 201"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-NM7002-1-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Estadística Aplicada",
+   "codes": [
+    {
+     "code": "NM6002",
+     "level": "PREG",
+     "class": 4006,
+     "program": "ECD"
+    },
+    {
+     "code": "NM7002",
+     "level": "MSTR",
+     "class": 5574,
+     "program": "MCDA"
+    },
+    {
+     "code": "EC1800",
+     "level": "PREG",
+     "class": 5202,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-26",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 202",
+     "teacher": "Milton Alfonso Martinez Negrete"
+    },
+    {
+     "date": "2027-02-27",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 202",
+     "teacher": "Milton Alfonso Martinez Negrete"
+    },
+    {
+     "date": "2027-03-05",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 202",
+     "teacher": "Milton Alfonso Martinez Negrete"
+    },
+    {
+     "date": "2027-03-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 202",
+     "teacher": "Milton Alfonso Martinez Negrete"
+    },
+    {
+     "date": "2027-03-12",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 202",
+     "teacher": "Milton Alfonso Martinez Negrete"
+    },
+    {
+     "date": "2027-03-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 202",
+     "teacher": "Milton Alfonso Martinez Negrete"
+    }
+   ],
+   "start": "2027-02-26",
+   "end": "2027-03-13",
+   "teachers": [
+    "Milton Alfonso Martinez Negrete"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 202"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-NM7002-2-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Estadística Aplicada",
+   "codes": [
+    {
+     "code": "NM6002",
+     "level": "PREG",
+     "class": 4117,
+     "program": "ECD"
+    },
+    {
+     "code": "NM7002",
+     "level": "MSTR",
+     "class": 5575,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-26",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-02-27",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-03-05",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-03-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-03-12",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-03-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 302",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    }
+   ],
+   "start": "2027-02-26",
+   "end": "2027-03-13",
+   "teachers": [
+    "Nicolas Alberto Moreno Reyes"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 302"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-NM7002-3-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Estadística Aplicada",
+   "codes": [
+    {
+     "code": "NM6002",
+     "level": "PREG",
+     "class": 5487,
+     "program": "ECD"
+    },
+    {
+     "code": "NM7002",
+     "level": "MSTR",
+     "class": 5677,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "3",
+   "section": "3",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-26",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-27",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 14 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-05",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 14 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-12",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 14 Aula 202",
+     "teacher": null
+    }
+   ],
+   "start": "2027-02-26",
+   "end": "2027-03-13",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 14 Aula 202"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7009-1-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Aprendizaje Automático",
+   "codes": [
+    {
+     "code": "SI6002",
+     "level": "PREG",
+     "class": 4023,
+     "program": "ECD"
+    },
+    {
+     "code": "SI7009",
+     "level": "MSTR",
+     "class": 5576,
+     "program": "MCDA"
+    },
+    {
+     "code": "CM0939",
+     "level": "PREG",
+     "class": 3485,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-03-19",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 34 Aula 203",
+     "teacher": "Andres Vasquez Restrepo"
+    },
+    {
+     "date": "2027-03-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 34 Aula 203",
+     "teacher": "Andres Vasquez Restrepo"
+    },
+    {
+     "date": "2027-04-02",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 34 Aula 203",
+     "teacher": "Andres Vasquez Restrepo"
+    },
+    {
+     "date": "2027-04-03",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 34 Aula 203",
+     "teacher": "Andres Vasquez Restrepo"
+    },
+    {
+     "date": "2027-04-09",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 34 Aula 203",
+     "teacher": "Andres Vasquez Restrepo"
+    },
+    {
+     "date": "2027-04-10",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 34 Aula 203",
+     "teacher": "Andres Vasquez Restrepo"
+    },
+    {
+     "date": "2027-05-29",
+     "start": "14:00",
+     "end": "15:00",
+     "room": null,
+     "teacher": "Andres Vasquez Restrepo"
+    }
+   ],
+   "start": "2027-03-19",
+   "end": "2027-05-29",
+   "teachers": [
+    "Andres Vasquez Restrepo"
+   ],
+   "rooms": [
+    "Poblado Bloque 34 Aula 203"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7009-2-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Aprendizaje Automático",
+   "codes": [
+    {
+     "code": "SI6002",
+     "level": "PREG",
+     "class": 4248,
+     "program": "ECD"
+    },
+    {
+     "code": "SI7009",
+     "level": "MSTR",
+     "class": 5577,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-03-19",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 34 Aula 302",
+     "teacher": "Pablo Andres Saldarriaga Aristizabal"
+    },
+    {
+     "date": "2027-03-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 34 Aula 302",
+     "teacher": "Pablo Andres Saldarriaga Aristizabal"
+    },
+    {
+     "date": "2027-04-02",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 34 Aula 302",
+     "teacher": "Pablo Andres Saldarriaga Aristizabal"
+    },
+    {
+     "date": "2027-04-03",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 34 Aula 302",
+     "teacher": "Pablo Andres Saldarriaga Aristizabal"
+    },
+    {
+     "date": "2027-04-09",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 34 Aula 302",
+     "teacher": "Pablo Andres Saldarriaga Aristizabal"
+    },
+    {
+     "date": "2027-04-10",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 34 Aula 302",
+     "teacher": "Pablo Andres Saldarriaga Aristizabal"
+    },
+    {
+     "date": "2027-05-29",
+     "start": "14:00",
+     "end": "15:00",
+     "room": null,
+     "teacher": "Pablo Andres Saldarriaga Aristizabal"
+    }
+   ],
+   "start": "2027-03-19",
+   "end": "2027-05-29",
+   "teachers": [
+    "Pablo Andres Saldarriaga Aristizabal"
+   ],
+   "rooms": [
+    "Poblado Bloque 34 Aula 302"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7009-3-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Aprendizaje Automático",
+   "codes": [
+    {
+     "code": "SI6002",
+     "level": "PREG",
+     "class": 5526,
+     "program": "ECD"
+    },
+    {
+     "code": "SI7009",
+     "level": "MSTR",
+     "class": 5687,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "3",
+   "section": "3",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-03-19",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 16 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-02",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-03",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 16 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-09",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-10",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 16 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-29",
+     "start": "14:00",
+     "end": "15:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-03-19",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 16 Aula 204"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7006-1-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Alm. y Proc. de grandes datos",
+   "codes": [
+    {
+     "code": "SI6003",
+     "level": "PREG",
+     "class": 4020,
+     "program": "ECD"
+    },
+    {
+     "code": "SI7006",
+     "level": "MSTR",
+     "class": 5578,
+     "program": "MCDA"
+    },
+    {
+     "code": "ST1801",
+     "level": "PREG",
+     "class": 5900,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-16",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 34 Aula 302",
+     "teacher": "Edwin Nelson Montoya Munera"
+    },
+    {
+     "date": "2027-04-17",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 34 Aula 302",
+     "teacher": "Edwin Nelson Montoya Munera"
+    },
+    {
+     "date": "2027-04-23",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 34 Aula 302",
+     "teacher": "Edwin Nelson Montoya Munera"
+    },
+    {
+     "date": "2027-04-24",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 34 Aula 302",
+     "teacher": "Edwin Nelson Montoya Munera"
+    },
+    {
+     "date": "2027-05-07",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 34 Aula 302",
+     "teacher": "Edwin Nelson Montoya Munera"
+    },
+    {
+     "date": "2027-05-08",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 34 Aula 302",
+     "teacher": "Edwin Nelson Montoya Munera"
+    },
+    {
+     "date": "2027-05-29",
+     "start": "15:00",
+     "end": "16:00",
+     "room": null,
+     "teacher": "Edwin Nelson Montoya Munera"
+    }
+   ],
+   "start": "2027-04-16",
+   "end": "2027-05-29",
+   "teachers": [
+    "Edwin Nelson Montoya Munera"
+   ],
+   "rooms": [
+    "Poblado Bloque 34 Aula 302"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7006-2-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Alm. y Proc. de grandes datos",
+   "codes": [
+    {
+     "code": "SI6003",
+     "level": "PREG",
+     "class": 4245,
+     "program": "ECD"
+    },
+    {
+     "code": "SI7006",
+     "level": "MSTR",
+     "class": 5579,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-16",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-17",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-23",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-24",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-07",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-08",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 33 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-29",
+     "start": "15:00",
+     "end": "16:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-04-16",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 33 Aula 202"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7006-3-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Alm. y Proc. de grandes datos",
+   "codes": [
+    {
+     "code": "SI6003",
+     "level": "PREG",
+     "class": 5527,
+     "program": "ECD"
+    },
+    {
+     "code": "SI7006",
+     "level": "MSTR",
+     "class": 5690,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "3",
+   "section": "3",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-16",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-17",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 16 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-23",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-24",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 16 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-07",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-08",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 16 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-29",
+     "start": "15:00",
+     "end": "16:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-04-16",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 16 Aula 204"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7007-1-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Visualización de Datos",
+   "codes": [
+    {
+     "code": "SI6004",
+     "level": "PREG",
+     "class": 4021,
+     "program": "ECD"
+    },
+    {
+     "code": "SI7007",
+     "level": "MSTR",
+     "class": 5580,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-05-14",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 203",
+     "teacher": "Alberto Mauricio Arias Correa"
+    },
+    {
+     "date": "2027-05-15",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 203",
+     "teacher": "Alberto Mauricio Arias Correa"
+    },
+    {
+     "date": "2027-05-21",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 203",
+     "teacher": "Alberto Mauricio Arias Correa"
+    },
+    {
+     "date": "2027-05-22",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 203",
+     "teacher": "Alberto Mauricio Arias Correa"
+    },
+    {
+     "date": "2027-05-28",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 203",
+     "teacher": "Alberto Mauricio Arias Correa"
+    },
+    {
+     "date": "2027-05-29",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 33 Aula 203",
+     "teacher": "Alberto Mauricio Arias Correa"
+    },
+    {
+     "date": "2027-05-29",
+     "start": "16:00",
+     "end": "17:00",
+     "room": null,
+     "teacher": "Alberto Mauricio Arias Correa"
+    }
+   ],
+   "start": "2027-05-14",
+   "end": "2027-05-29",
+   "teachers": [
+    "Alberto Mauricio Arias Correa"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 203"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7007-2-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Visualización de Datos",
+   "codes": [
+    {
+     "code": "SI6004",
+     "level": "PREG",
+     "class": 4246,
+     "program": "ECD"
+    },
+    {
+     "code": "SI7007",
+     "level": "MSTR",
+     "class": 5581,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-05-14",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Edison Valencia Diaz"
+    },
+    {
+     "date": "2027-05-15",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Edison Valencia Diaz"
+    },
+    {
+     "date": "2027-05-21",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Edison Valencia Diaz"
+    },
+    {
+     "date": "2027-05-22",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Edison Valencia Diaz"
+    },
+    {
+     "date": "2027-05-28",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Edison Valencia Diaz"
+    },
+    {
+     "date": "2027-05-29",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Edison Valencia Diaz"
+    },
+    {
+     "date": "2027-05-29",
+     "start": "16:00",
+     "end": "17:00",
+     "room": null,
+     "teacher": "Edison Valencia Diaz"
+    }
+   ],
+   "start": "2027-05-14",
+   "end": "2027-05-29",
+   "teachers": [
+    "Edison Valencia Diaz"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 103"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7007-3-pri",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA",
+    "ECD"
+   ],
+   "course": "Visualización de Datos",
+   "codes": [
+    {
+     "code": "SI6004",
+     "level": "PREG",
+     "class": 5528,
+     "program": "ECD"
+    },
+    {
+     "code": "SI7007",
+     "level": "MSTR",
+     "class": 5692,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "3",
+   "section": "3",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-05-14",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-15",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-21",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-22",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-28",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-29",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-29",
+     "start": "16:00",
+     "end": "17:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-05-14",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 17 Aula 203"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7015-1-seg",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Semin. Computación y Analítica",
+   "codes": [
+    {
+     "code": "SI7015",
+     "level": "MSTR",
+     "class": 1110,
+     "program": "MCDA"
+    },
+    {
+     "code": "EI0808",
+     "level": "DOCT",
+     "class": 1109,
+     "program": null
+    }
+   ],
+   "semester": "Segundo semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 12,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-22",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Claudia Velez Pereira"
+    },
+    {
+     "date": "2027-01-23",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Luis Felipe Atehortua Betancur"
+    },
+    {
+     "date": "2027-01-29",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Claudia Velez Pereira"
+    },
+    {
+     "date": "2027-01-29",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Luis Felipe Atehortua Betancur"
+    }
+   ],
+   "start": "2027-01-22",
+   "end": "2027-01-29",
+   "teachers": [
+    "Claudia Velez Pereira",
+    "Luis Felipe Atehortua Betancur"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 101"
+   ],
+   "scheduledHours": 12.0
+  },
+  {
+   "id": "MCDA-NM7003-1-seg",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Estadística Avanzada",
+   "codes": [
+    {
+     "code": "NM7003",
+     "level": "MSTR",
+     "class": 5583,
+     "program": "MCDA"
+    },
+    {
+     "code": "EC1201",
+     "level": "PREG",
+     "class": 3350,
+     "program": null
+    }
+   ],
+   "semester": "Segundo semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-12",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 34 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 34 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-19",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 34 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 34 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-26",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 34 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-27",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 34 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-06-05",
+     "start": "17:00",
+     "end": "18:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-02-12",
+   "end": "2027-06-05",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 34 Aula 203"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7002-1-seg",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Ética de IA e integr. de Datos",
+   "codes": [
+    {
+     "code": "SI7002",
+     "level": "MSTR",
+     "class": 5586,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Segundo semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-05-14",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-05-15",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-05-21",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-05-22",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-05-28",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-05-29",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Olga Lucia Quintero Montoya"
+    }
+   ],
+   "start": "2027-05-14",
+   "end": "2027-05-29",
+   "teachers": [
+    "Olga Lucia Quintero Montoya"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 101"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7010-1-seg",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Seminario Proyecto de Grado",
+   "codes": [
+    {
+     "code": "SI7010",
+     "level": "MSTR",
+     "class": 5582,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Segundo semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-30",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Gloria Maria Doria Herrera"
+    },
+    {
+     "date": "2027-02-05",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Gloria Maria Doria Herrera"
+    },
+    {
+     "date": "2027-02-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Gloria Maria Doria Herrera"
+    },
+    {
+     "date": "2027-03-05",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Gloria Maria Doria Herrera"
+    },
+    {
+     "date": "2027-03-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Gloria Maria Doria Herrera"
+    },
+    {
+     "date": "2027-04-30",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Gloria Maria Doria Herrera"
+    },
+    {
+     "date": "2027-05-07",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Gloria Maria Doria Herrera"
+    },
+    {
+     "date": "2027-05-08",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Gloria Maria Doria Herrera"
+    },
+    {
+     "date": "2027-06-04",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 101",
+     "teacher": "Gloria Maria Doria Herrera"
+    }
+   ],
+   "start": "2027-01-30",
+   "end": "2027-06-04",
+   "teachers": [
+    "Gloria Maria Doria Herrera"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 101",
+    "Poblado Bloque 33 Aula 103"
+   ],
+   "scheduledHours": 36.0
+  },
+  {
+   "id": "MCDA-SI7011-1-seg",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Aprendizaje Profundo",
+   "codes": [
+    {
+     "code": "SI7011",
+     "level": "MSTR",
+     "class": 5584,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Segundo semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-03-12",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan David Martinez Vargas"
+    },
+    {
+     "date": "2027-03-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan David Martinez Vargas"
+    },
+    {
+     "date": "2027-03-19",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan David Martinez Vargas"
+    },
+    {
+     "date": "2027-03-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan David Martinez Vargas"
+    },
+    {
+     "date": "2027-04-02",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan David Martinez Vargas"
+    },
+    {
+     "date": "2027-04-03",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan David Martinez Vargas"
+    },
+    {
+     "date": "2027-06-05",
+     "start": "18:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": "Juan David Martinez Vargas"
+    }
+   ],
+   "start": "2027-03-12",
+   "end": "2027-06-05",
+   "teachers": [
+    "Juan David Martinez Vargas"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 103"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7012-1-seg",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Sist. Aprendizaje Automátíco",
+   "codes": [
+    {
+     "code": "SI7012",
+     "level": "MSTR",
+     "class": 5585,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Segundo semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-09",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Carlos Montoya Mendoza"
+    },
+    {
+     "date": "2027-04-10",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Carlos Montoya Mendoza"
+    },
+    {
+     "date": "2027-04-16",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Carlos Montoya Mendoza"
+    },
+    {
+     "date": "2027-04-17",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Carlos Montoya Mendoza"
+    },
+    {
+     "date": "2027-04-23",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Carlos Montoya Mendoza"
+    },
+    {
+     "date": "2027-04-24",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Carlos Montoya Mendoza"
+    },
+    {
+     "date": "2027-05-29",
+     "start": "19:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Juan Carlos Montoya Mendoza"
+    }
+   ],
+   "start": "2027-04-09",
+   "end": "2027-05-29",
+   "teachers": [
+    "Juan Carlos Montoya Mendoza"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 103"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7013-1-ter",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Trabajo de Grado",
+   "codes": [
+    {
+     "code": "SI7013",
+     "level": "MSTR",
+     "class": 5589,
+     "program": "MCDA"
+    },
+    {
+     "code": "EA0902",
+     "level": "MSTR",
+     "class": 5633,
+     "program": null
+    }
+   ],
+   "semester": "Tercer semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 72,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-17",
+   "end": "2027-05-30",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "MCDA-SI7014-1-ter",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Semin. Experiencias Analítica",
+   "codes": [
+    {
+     "code": "SI7014",
+     "level": "MSTR",
+     "class": 5587,
+     "program": "MCDA"
+    },
+    {
+     "code": "GP0677",
+     "level": "PREG",
+     "class": 5282,
+     "program": null
+    }
+   ],
+   "semester": "Tercer semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-03-05",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Ana María López Moreno"
+    },
+    {
+     "date": "2027-03-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Ana María López Moreno"
+    },
+    {
+     "date": "2027-03-12",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Ana María López Moreno"
+    },
+    {
+     "date": "2027-03-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Ana María López Moreno"
+    },
+    {
+     "date": "2027-03-19",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Ana María López Moreno"
+    },
+    {
+     "date": "2027-03-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Ana María López Moreno"
+    }
+   ],
+   "start": "2027-03-05",
+   "end": "2027-03-20",
+   "teachers": [
+    "Ana María López Moreno"
+   ],
+   "rooms": [
+    "Poblado Bloque 14 Aula 201"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-NM7004-1-ele",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Estadística No Paramétrica",
+   "codes": [
+    {
+     "code": "NM7004",
+     "level": "MSTR",
+     "class": 5596,
+     "program": "MCDA"
+    },
+    {
+     "code": "CM0940",
+     "level": "PREG",
+     "class": 3484,
+     "program": null
+    }
+   ],
+   "semester": "Electivas",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-08",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Diego Fernando Fonseca Valero"
+    },
+    {
+     "date": "2027-04-15",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Diego Fernando Fonseca Valero"
+    },
+    {
+     "date": "2027-04-22",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Diego Fernando Fonseca Valero"
+    },
+    {
+     "date": "2027-04-29",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Diego Fernando Fonseca Valero"
+    },
+    {
+     "date": "2027-05-06",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Diego Fernando Fonseca Valero"
+    },
+    {
+     "date": "2027-05-13",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Diego Fernando Fonseca Valero"
+    }
+   ],
+   "start": "2027-04-08",
+   "end": "2027-05-13",
+   "teachers": [
+    "Diego Fernando Fonseca Valero"
+   ],
+   "rooms": [
+    "Poblado Bloque 14 Aula 201"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7001-1-ele",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Intro. a Inteligencia Artifici",
+   "codes": [
+    {
+     "code": "SI7001",
+     "level": "MSTR",
+     "class": 5591,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Electivas",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-11",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 102",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-18",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 102",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-25",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 102",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-04",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 102",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-11",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 102",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-18",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 102",
+     "teacher": null
+    }
+   ],
+   "start": "2027-02-11",
+   "end": "2027-03-18",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 07 Aula 102"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7016-1-ele",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Proc. de Leng. Nat. Aplicado",
+   "codes": [
+    {
+     "code": "SI7016",
+     "level": "MSTR",
+     "class": 5592,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Electivas",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-09",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 101",
+     "teacher": "Edwin Nelson Montoya Munera"
+    },
+    {
+     "date": "2027-02-16",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 101",
+     "teacher": "Edwin Nelson Montoya Munera"
+    },
+    {
+     "date": "2027-02-23",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 101",
+     "teacher": "Edwin Nelson Montoya Munera"
+    },
+    {
+     "date": "2027-03-02",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 101",
+     "teacher": "Edwin Nelson Montoya Munera"
+    },
+    {
+     "date": "2027-03-09",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 101",
+     "teacher": "Edwin Nelson Montoya Munera"
+    },
+    {
+     "date": "2027-03-16",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 101",
+     "teacher": "Edwin Nelson Montoya Munera"
+    }
+   ],
+   "start": "2027-02-09",
+   "end": "2027-03-16",
+   "teachers": [
+    "Edwin Nelson Montoya Munera"
+   ],
+   "rooms": [
+    "Poblado Bloque 07 Aula 101"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7017-1-ele",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Visión por Computador Aplicado",
+   "codes": [
+    {
+     "code": "SI7017",
+     "level": "MSTR",
+     "class": 5593,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Electivas",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-07",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 103",
+     "teacher": "Juan Carlos Arbelaez Estrada"
+    },
+    {
+     "date": "2027-04-14",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 103",
+     "teacher": "Juan Carlos Arbelaez Estrada"
+    },
+    {
+     "date": "2027-04-21",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 103",
+     "teacher": "Juan Carlos Arbelaez Estrada"
+    },
+    {
+     "date": "2027-04-28",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 103",
+     "teacher": "Juan Carlos Arbelaez Estrada"
+    },
+    {
+     "date": "2027-05-05",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 103",
+     "teacher": "Juan Carlos Arbelaez Estrada"
+    },
+    {
+     "date": "2027-05-12",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 07 Aula 103",
+     "teacher": "Juan Carlos Arbelaez Estrada"
+    }
+   ],
+   "start": "2027-04-07",
+   "end": "2027-05-12",
+   "teachers": [
+    "Juan Carlos Arbelaez Estrada"
+   ],
+   "rooms": [
+    "Poblado Bloque 07 Aula 103"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MCDA-SI7018-1-ele",
+   "source": "sis",
+   "sheet": "MCDA",
+   "programs": [
+    "MCDA"
+   ],
+   "course": "Mineria de Grandes Datos",
+   "codes": [
+    {
+     "code": "SI7018",
+     "level": "MSTR",
+     "class": 5595,
+     "program": "MCDA"
+    }
+   ],
+   "semester": "Electivas",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-10",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-17",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-24",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-03",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-10",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-17",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": null
+    }
+   ],
+   "start": "2027-02-10",
+   "end": "2027-03-17",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 14 Aula 201"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MIA-SI6021-5-pri",
+   "source": "sis",
+   "sheet": "MIA",
+   "programs": [
+    "MIA"
+   ],
+   "course": "Fundamentos de IA",
+   "codes": [
+    {
+     "code": "SI6021",
+     "level": "ESPE",
+     "class": 7333,
+     "program": "MIA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "5",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-03-05",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-12",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-19",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    }
+   ],
+   "start": "2027-03-05",
+   "end": "2027-03-20",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 17 Aula 201"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MIA-SI7006-4-pri",
+   "source": "sis",
+   "sheet": "MIA",
+   "programs": [
+    "MIA"
+   ],
+   "course": "Alm. y Proc. de grandes datos",
+   "codes": [
+    {
+     "code": "SI7006",
+     "level": "MSTR",
+     "class": 7027,
+     "program": "MIA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "4",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-06-11",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-06-12",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-06-18",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-06-19",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-06-25",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-06-26",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-07-17",
+     "start": "15:00",
+     "end": "16:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-06-11",
+   "end": "2027-07-17",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 17 Aula 201"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MIA-SI7009-4-pri",
+   "source": "sis",
+   "sheet": "MIA",
+   "programs": [
+    "MIA"
+   ],
+   "course": "Aprendizaje Automático",
+   "codes": [
+    {
+     "code": "SI7009",
+     "level": "MSTR",
+     "class": 7025,
+     "program": "MIA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "4",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-05-21",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-22",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-28",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-29",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-06-04",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-06-05",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-07-17",
+     "start": "14:00",
+     "end": "15:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-05-21",
+   "end": "2027-07-17",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 17 Aula 201",
+    "Poblado Bloque 17 Aula 202"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MIA-SI7011-2-pri",
+   "source": "sis",
+   "sheet": "MIA",
+   "programs": [
+    "MIA"
+   ],
+   "course": "Aprendizaje Profundo",
+   "codes": [
+    {
+     "code": "SI7011",
+     "level": "MSTR",
+     "class": 7334,
+     "program": "MIA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "2",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-07-02",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-07-03",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-07-09",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-07-10",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-07-16",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-07-17",
+     "start": "08:00",
+     "end": "11:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-07-17",
+     "start": "16:00",
+     "end": "17:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-07-02",
+   "end": "2027-07-17",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 17 Aula 201"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MIA-NM7001-4-pri",
+   "source": "sis",
+   "sheet": "MIA",
+   "programs": [
+    "MIA"
+   ],
+   "course": "Matemáticas Aplicada",
+   "codes": [
+    {
+     "code": "NM7001",
+     "level": "MSTR",
+     "class": 7022,
+     "program": "MIA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "4",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-02",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-03",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-09",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-10",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-16",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-17",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 202",
+     "teacher": null
+    }
+   ],
+   "start": "2027-04-02",
+   "end": "2027-04-17",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 17 Aula 201",
+    "Poblado Bloque 17 Aula 202"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "MIA-NM7002-4-pri",
+   "source": "sis",
+   "sheet": "MIA",
+   "programs": [
+    "MIA"
+   ],
+   "course": "Estadística Aplicada",
+   "codes": [
+    {
+     "code": "NM7002",
+     "level": "MSTR",
+     "class": 7023,
+     "program": "MIA"
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "4",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-23",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-24",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 202",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-07",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-08",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 204",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-14",
+     "start": "17:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 17 Aula 201",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-15",
+     "start": "08:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 17 Aula 204",
+     "teacher": null
+    }
+   ],
+   "start": "2027-04-23",
+   "end": "2027-05-15",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 17 Aula 201",
+    "Poblado Bloque 17 Aula 202",
+    "Poblado Bloque 17 Aula 204"
+   ],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-SI6005-1-pri",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Procesos modernos de desarrollo de software",
+   "codes": [
+    {
+     "code": "SI6005",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "SI5002",
+     "level": "Pre/Pos",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1605",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1623",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-05",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Andres Felipe Alvarez Bermudez"
+    },
+    {
+     "date": "2027-02-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Andres Felipe Alvarez Bermudez"
+    },
+    {
+     "date": "2027-02-12",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Andres Felipe Alvarez Bermudez"
+    },
+    {
+     "date": "2027-02-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Andres Felipe Alvarez Bermudez"
+    },
+    {
+     "date": "2027-02-19",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Andres Felipe Alvarez Bermudez"
+    },
+    {
+     "date": "2027-02-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Andres Felipe Alvarez Bermudez"
+    },
+    {
+     "date": "2027-02-26",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Andres Felipe Alvarez Bermudez"
+    },
+    {
+     "date": "2027-02-27",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Andres Felipe Alvarez Bermudez"
+    }
+   ],
+   "start": "2027-02-05",
+   "end": "2027-02-27",
+   "teachers": [
+    "Andres Felipe Alvarez Bermudez"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-SI6006-1-pri",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Arquitecturas avanzadas de software",
+   "codes": [
+    {
+     "code": "SI6006",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "SI5003",
+     "level": "Pre/Pos",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1607",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1625",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-03-05",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Jose Daniel Medina Solano"
+    },
+    {
+     "date": "2027-03-06",
+     "start": "08:00",
+     "end": "13:00",
+     "room": null,
+     "teacher": "Jose Daniel Medina Solano"
+    },
+    {
+     "date": "2027-03-12",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Jose Daniel Medina Solano"
+    },
+    {
+     "date": "2027-03-13",
+     "start": "08:00",
+     "end": "13:00",
+     "room": null,
+     "teacher": "Jose Daniel Medina Solano"
+    },
+    {
+     "date": "2027-03-19",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Jose Daniel Medina Solano"
+    },
+    {
+     "date": "2027-03-20",
+     "start": "08:00",
+     "end": "13:00",
+     "room": null,
+     "teacher": "Jose Daniel Medina Solano"
+    }
+   ],
+   "start": "2027-03-05",
+   "end": "2027-03-20",
+   "teachers": [
+    "Jose Daniel Medina Solano"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-SI6007-1-pri",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Desarrollo de sistemas seguros",
+   "codes": [
+    {
+     "code": "SI6007",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "SI5004",
+     "level": "Pre/Pos",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1608",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1626",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-02",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Manuel Humberto Santander Peláez"
+    },
+    {
+     "date": "2027-04-03",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Manuel Humberto Santander Peláez"
+    },
+    {
+     "date": "2027-04-09",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Manuel Humberto Santander Peláez"
+    },
+    {
+     "date": "2027-04-10",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Manuel Humberto Santander Peláez"
+    },
+    {
+     "date": "2027-04-16",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Manuel Humberto Santander Peláez"
+    },
+    {
+     "date": "2027-04-17",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Manuel Humberto Santander Peláez"
+    },
+    {
+     "date": "2027-04-23",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Manuel Humberto Santander Peláez"
+    },
+    {
+     "date": "2027-04-24",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Manuel Humberto Santander Peláez"
+    }
+   ],
+   "start": "2027-04-02",
+   "end": "2027-04-24",
+   "teachers": [
+    "Manuel Humberto Santander Peláez"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-SI6008-1-pri",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Integración y entrega continua de software",
+   "codes": [
+    {
+     "code": "SI6008",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "SI5005",
+     "level": "Pre/Pos",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1606",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1624",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-05-07",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Daniel Rendon Montaño"
+    },
+    {
+     "date": "2027-05-08",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Daniel Rendon Montaño"
+    },
+    {
+     "date": "2027-05-14",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Daniel Rendon Montaño"
+    },
+    {
+     "date": "2027-05-15",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Daniel Rendon Montaño"
+    },
+    {
+     "date": "2027-05-21",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Daniel Rendon Montaño"
+    },
+    {
+     "date": "2027-05-22",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Daniel Rendon Montaño"
+    },
+    {
+     "date": "2027-05-28",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Daniel Rendon Montaño"
+    },
+    {
+     "date": "2027-05-29",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Daniel Rendon Montaño"
+    }
+   ],
+   "start": "2027-05-07",
+   "end": "2027-05-29",
+   "teachers": [
+    "Daniel Rendon Montaño"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-SI6005-2-pri",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Procesos modernos de desarrollo de software",
+   "codes": [
+    {
+     "code": "SI6005",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "SI5002",
+     "level": "Pre/Pos",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1605",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1623",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-05",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Jorge Hernan Abad Londoño"
+    },
+    {
+     "date": "2027-02-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Jorge Hernan Abad Londoño"
+    },
+    {
+     "date": "2027-02-12",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Jorge Hernan Abad Londoño"
+    },
+    {
+     "date": "2027-02-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Jorge Hernan Abad Londoño"
+    },
+    {
+     "date": "2027-02-19",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Jorge Hernan Abad Londoño"
+    },
+    {
+     "date": "2027-02-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Jorge Hernan Abad Londoño"
+    },
+    {
+     "date": "2027-02-26",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Jorge Hernan Abad Londoño"
+    },
+    {
+     "date": "2027-02-27",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Jorge Hernan Abad Londoño"
+    }
+   ],
+   "start": "2027-02-05",
+   "end": "2027-02-27",
+   "teachers": [
+    "Jorge Hernan Abad Londoño"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-SI6006-2-pri",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Arquitecturas avanzadas de software",
+   "codes": [
+    {
+     "code": "SI6006",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "SI5003",
+     "level": "Pre/Pos",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1607",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1625",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-03-05",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Danny Andres Salcedo Saldaña"
+    },
+    {
+     "date": "2027-03-06",
+     "start": "08:00",
+     "end": "13:00",
+     "room": null,
+     "teacher": "Danny Andres Salcedo Saldaña"
+    },
+    {
+     "date": "2027-03-12",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Danny Andres Salcedo Saldaña"
+    },
+    {
+     "date": "2027-03-13",
+     "start": "08:00",
+     "end": "13:00",
+     "room": null,
+     "teacher": "Danny Andres Salcedo Saldaña"
+    },
+    {
+     "date": "2027-03-19",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Danny Andres Salcedo Saldaña"
+    },
+    {
+     "date": "2027-03-20",
+     "start": "08:00",
+     "end": "13:00",
+     "room": null,
+     "teacher": "Danny Andres Salcedo Saldaña"
+    }
+   ],
+   "start": "2027-03-05",
+   "end": "2027-03-20",
+   "teachers": [
+    "Danny Andres Salcedo Saldaña"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-SI6007-2-pri",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Desarrollo de sistemas seguros",
+   "codes": [
+    {
+     "code": "SI6007",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "SI5004",
+     "level": "Pre/Pos",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1608",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1626",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-02",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Cesar Augusto Ruiz Jaramillo"
+    },
+    {
+     "date": "2027-04-03",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Cesar Augusto Ruiz Jaramillo"
+    },
+    {
+     "date": "2027-04-09",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Cesar Augusto Ruiz Jaramillo"
+    },
+    {
+     "date": "2027-04-10",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Cesar Augusto Ruiz Jaramillo"
+    },
+    {
+     "date": "2027-04-16",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Cesar Augusto Ruiz Jaramillo"
+    },
+    {
+     "date": "2027-04-17",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Cesar Augusto Ruiz Jaramillo"
+    },
+    {
+     "date": "2027-04-23",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Cesar Augusto Ruiz Jaramillo"
+    },
+    {
+     "date": "2027-04-24",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Cesar Augusto Ruiz Jaramillo"
+    }
+   ],
+   "start": "2027-04-02",
+   "end": "2027-04-24",
+   "teachers": [
+    "Cesar Augusto Ruiz Jaramillo"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-SI6008-2-pri",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Integración y entrega continua de software",
+   "codes": [
+    {
+     "code": "SI6008",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "SI5005",
+     "level": "Pre/Pos",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1606",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    },
+    {
+     "code": "ST1624",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Primer semestre",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-05-07",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Daniel Hoyos Ospina"
+    },
+    {
+     "date": "2027-05-08",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Daniel Hoyos Ospina"
+    },
+    {
+     "date": "2027-05-14",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Daniel Hoyos Ospina"
+    },
+    {
+     "date": "2027-05-15",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Daniel Hoyos Ospina"
+    },
+    {
+     "date": "2027-05-21",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Daniel Hoyos Ospina"
+    },
+    {
+     "date": "2027-05-22",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Daniel Hoyos Ospina"
+    },
+    {
+     "date": "2027-05-28",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Daniel Hoyos Ospina"
+    },
+    {
+     "date": "2027-05-29",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Daniel Hoyos Ospina"
+    }
+   ],
+   "start": "2027-05-07",
+   "end": "2027-05-29",
+   "teachers": [
+    "Daniel Hoyos Ospina"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-SI6009-1-seg",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Industrialización del desarrollo de software",
+   "codes": [
+    {
+     "code": "SI6009",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "ST1704",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Segundo semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-05",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-02-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-02-12",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-02-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-02-19",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-02-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-02-26",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-02-27",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    }
+   ],
+   "start": "2027-02-05",
+   "end": "2027-02-27",
+   "teachers": [
+    "Juan Bernardo Quintero"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-SI6010-1-seg",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Tendencias emergentes en desarrollo de software",
+   "codes": [
+    {
+     "code": "SI6010",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "ST1707",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Segundo semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-03-05",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-03-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-03-11",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-03-12",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-03-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-03-19",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    },
+    {
+     "date": "2027-03-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Juan Bernardo Quintero"
+    }
+   ],
+   "start": "2027-03-05",
+   "end": "2027-03-20",
+   "teachers": [
+    "Juan Bernardo Quintero"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-SI6011-1-seg",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Arquitecturas evolutivas de software",
+   "codes": [
+    {
+     "code": "SI6011",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "ST1706",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Segundo semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-02",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Carlos Eduardo Orozco Garces"
+    },
+    {
+     "date": "2027-04-03",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Carlos Eduardo Orozco Garces"
+    },
+    {
+     "date": "2027-04-09",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Carlos Eduardo Orozco Garces"
+    },
+    {
+     "date": "2027-04-10",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Carlos Eduardo Orozco Garces"
+    },
+    {
+     "date": "2027-04-16",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Carlos Eduardo Orozco Garces"
+    },
+    {
+     "date": "2027-04-17",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Carlos Eduardo Orozco Garces"
+    },
+    {
+     "date": "2027-04-23",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Carlos Eduardo Orozco Garces"
+    },
+    {
+     "date": "2027-04-24",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Carlos Eduardo Orozco Garces"
+    }
+   ],
+   "start": "2027-04-02",
+   "end": "2027-04-24",
+   "teachers": [
+    "Carlos Eduardo Orozco Garces"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-SI6012-1-seg",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Ingeniería para sistemas distribuidos",
+   "codes": [
+    {
+     "code": "SI6012",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "ST1708",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Segundo semestre",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-05-07",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Giovanni Humberto Gomez Zuluaga"
+    },
+    {
+     "date": "2027-05-08",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Giovanni Humberto Gomez Zuluaga"
+    },
+    {
+     "date": "2027-05-14",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Giovanni Humberto Gomez Zuluaga"
+    },
+    {
+     "date": "2027-05-15",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Giovanni Humberto Gomez Zuluaga"
+    },
+    {
+     "date": "2027-05-21",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Giovanni Humberto Gomez Zuluaga"
+    },
+    {
+     "date": "2027-05-22",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Giovanni Humberto Gomez Zuluaga"
+    },
+    {
+     "date": "2027-05-28",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Giovanni Humberto Gomez Zuluaga"
+    },
+    {
+     "date": "2027-05-29",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": "Giovanni Humberto Gomez Zuluaga"
+    }
+   ],
+   "start": "2027-05-07",
+   "end": "2027-05-29",
+   "teachers": [
+    "Giovanni Humberto Gomez Zuluaga"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-ST1615-1-ele",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Diseño de la Experiencia de Usuario",
+   "codes": [
+    {
+     "code": "ST1615",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    },
+    {
+     "code": "ST1633",
+     "level": "Pre/Pos",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Electivas",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-01",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-02-03",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-02-08",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-02-10",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-02-15",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-02-17",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-02-22",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-02-24",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-03-01",
+     "start": "18:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-03-03",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-03-08",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-03-10",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-03-15",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-03-17",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    },
+    {
+     "date": "2027-03-31",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": "Juan David Gonzalez Restrepo"
+    }
+   ],
+   "start": "2027-02-01",
+   "end": "2027-03-31",
+   "teachers": [
+    "Juan David Gonzalez Restrepo"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-ID0604-1-ele",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Proceso de diseño y desarrollo de nuevos productos",
+   "codes": [
+    {
+     "code": "ID0604",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    }
+   ],
+   "semester": "Electivas",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-19",
+     "start": "17:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-01-21",
+     "start": "17:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-01-26",
+     "start": "17:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-01-28",
+     "start": "17:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-02-02",
+     "start": "17:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-02-04",
+     "start": "17:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-01-19",
+   "end": "2027-02-04",
+   "teachers": [],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-ST1705-1-ele",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Ingeniería de sistemas auto-adaptables",
+   "codes": [
+    {
+     "code": "ST1705",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    }
+   ],
+   "semester": "Electivas",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-09",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Santiago Ruiz Arenas, Davinson Castaño Cano"
+    },
+    {
+     "date": "2027-02-11",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Santiago Ruiz Arenas, Davinson Castaño Cano"
+    },
+    {
+     "date": "2027-02-16",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Santiago Ruiz Arenas, Davinson Castaño Cano"
+    },
+    {
+     "date": "2027-02-18",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Santiago Ruiz Arenas, Davinson Castaño Cano"
+    },
+    {
+     "date": "2027-02-23",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Santiago Ruiz Arenas, Davinson Castaño Cano"
+    },
+    {
+     "date": "2027-02-25",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Santiago Ruiz Arenas, Davinson Castaño Cano"
+    },
+    {
+     "date": "2027-03-02",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Santiago Ruiz Arenas, Davinson Castaño Cano"
+    },
+    {
+     "date": "2027-03-04",
+     "start": "18:00",
+     "end": "21:00",
+     "room": null,
+     "teacher": "Santiago Ruiz Arenas, Davinson Castaño Cano"
+    }
+   ],
+   "start": "2027-02-09",
+   "end": "2027-03-04",
+   "teachers": [
+    "Santiago Ruiz Arenas",
+    "Davinson Castaño Cano"
+   ],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-ST1613-1-ele",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Aprendizaje de Máquina Aplicado",
+   "codes": [
+    {
+     "code": "ST1613",
+     "level": "Pre",
+     "class": null,
+     "program": null
+    }
+   ],
+   "semester": "Electivas",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-01",
+     "start": "17:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-08",
+     "start": "17:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-15",
+     "start": "17:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-22",
+     "start": "17:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-29",
+     "start": "17:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-06",
+     "start": "17:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-13",
+     "start": "17:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-20",
+     "start": "17:00",
+     "end": "20:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-04-01",
+   "end": "2027-05-20",
+   "teachers": [],
+   "rooms": [],
+   "scheduledHours": 24.0
+  },
+  {
+   "id": "EDS-ST1611-1-ele",
+   "source": "eds",
+   "sheet": "EDS",
+   "programs": [
+    "EDS"
+   ],
+   "course": "Computación en Nube",
+   "codes": [
+    {
+     "code": "ST1611",
+     "level": "Pos",
+     "class": null,
+     "program": "EDS"
+    }
+   ],
+   "semester": "Electivas",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-04-05",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-07",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-12",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-14",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-19",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-21",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-26",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-28",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-03",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-05",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-12",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-17",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-19",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-24",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-26",
+     "start": "18:00",
+     "end": "19:30",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-04-05",
+   "end": "2027-05-26",
+   "teachers": [],
+   "rooms": [],
+   "scheduledHours": 22.5
+  }
+ ],
+ "issues": [
+  {
+   "type": "sin_docente",
+   "offering": "MCDA-SI7008-3-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MCDA-NM7001-3-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MCDA-NM7002-3-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MCDA-SI7009-1-pri",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MCDA-SI7009-2-pri",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MCDA-SI7009-3-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MCDA-SI7009-3-pri",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MCDA-SI7006-1-pri",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MCDA-SI7006-2-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MCDA-SI7006-2-pri",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MCDA-SI7006-3-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MCDA-SI7006-3-pri",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MCDA-SI7007-1-pri",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MCDA-SI7007-2-pri",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MCDA-SI7007-3-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MCDA-SI7007-3-pri",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MCDA-NM7003-1-seg",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MCDA-NM7003-1-seg",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MCDA-SI7011-1-seg",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MCDA-SI7012-1-seg",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MCDA-SI7001-1-ele",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MCDA-SI7018-1-ele",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MIA-SI6021-5-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MIA-SI7006-4-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MIA-SI7006-4-pri",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MIA-SI7009-4-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MIA-SI7009-4-pri",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MIA-SI7011-2-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MIA-SI7011-2-pri",
+   "detail": "1 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MIA-NM7001-4-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MIA-NM7002-4-pri",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "EDS-ID0604-1-ele",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "EDS-ST1613-1-ele",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "horas",
+   "offering": "EDS-ST1611-1-ele",
+   "detail": "22.5 h programadas de 24 h"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "EDS-ST1611-1-ele",
+   "detail": "Docente por asignar"
+  }
+ ]
+}

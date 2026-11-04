@@ -1,0 +1,5 @@
+# Los Excel de origen contienen cédulas e IDs de docentes: no se versionan.
+*.xlsx
+*.xls
+excel/
+__pycache__/
