@@ -145,7 +145,11 @@ def parse_sis(path, holidays):
             name = main[C_NAME]
             # Las filas de reunión se repiten por cada código combinado: usar las del principal
             meetings = [r for r in rows if r[C_CODE] == main[C_CODE]]
-            planned = main[C_TOTAL_HRS]
+            # La hora de Proyecto Integrador (fila de 1 h sin aula) no hace parte de la programación
+            integrator = [r for r in meetings if r[C_SCHED_HRS] == 1 and not r[C_ROOM]]
+            meetings = [r for r in meetings if r not in integrator]
+            integrator_hours = sum(r[C_SCHED_HRS] for r in integrator)
+            planned = main[C_TOTAL_HRS] - integrator_hours
             directed = all(not r[C_ROOM] for r in meetings) and all(
                 "domingo" in str(r[C_DAYS]).lower() for r in meetings)
 
@@ -184,6 +188,7 @@ def parse_sis(path, holidays):
                 "group": cohort,
                 "section": section,
                 "plannedHours": planned,
+                "integratorHours": integrator_hours,
                 "directed": directed,
                 "sessions": [] if directed else sessions,
                 "start": min(to_date(r[C_START]) for r in meetings).isoformat(),

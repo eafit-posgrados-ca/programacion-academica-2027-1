@@ -441,7 +441,7 @@ function openDetail(o) {
       ${fact("Semestre · grupo", `${esc(o.semester)} · Grupo ${esc(o.group)}`)}
       ${fact("Códigos", o.codes.map((c) => `<span class="codes">${esc(c.code)}</span>${c.level ? ` <span class="tag">${esc(c.level)}</span>` : ""}`).join("<br>") || "—")}
       ${fact("Fechas", fmtRange(o.start, o.end))}
-      ${fact("Horas", o.directed ? `${o.plannedHours} (trabajo dirigido)` : `${fmtH(o.scheduledHours)} programadas de ${o.plannedHours}`)}
+      ${fact("Horas de clase", o.directed ? `${o.plannedHours} (trabajo dirigido)` : `${fmtH(o.scheduledHours)} programadas de ${o.plannedHours}${o.integratorHours ? `<div style="font-size:12px;color:var(--muted);font-weight:400">Sin contar ${o.integratorHours} h de Proyecto Integrador</div>` : ""}`)}
       ${fact("Docente", teacherList(o))}
       ${fact("Aula", o.rooms.length ? o.rooms.map(esc).join("<br>") : "—")}
     </div>

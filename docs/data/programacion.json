@@ -1,6 +1,6 @@
 {
  "period": "2027-1",
- "generated": "2026-11-04T14:43",
+ "generated": "2026-11-04T14:54",
  "programs": [
   {
    "id": "MIA",
@@ -117,6 +117,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -199,6 +200,7 @@
    "group": "2",
    "section": "2",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -281,6 +283,7 @@
    "group": "3",
    "section": "3",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -367,6 +370,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -449,6 +453,7 @@
    "group": "2",
    "section": "2",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -531,6 +536,7 @@
    "group": "3",
    "section": "3",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -617,6 +623,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -699,6 +706,7 @@
    "group": "2",
    "section": "2",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -781,6 +789,7 @@
    "group": "3",
    "section": "3",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -866,7 +875,8 @@
    "semester": "Primer semestre",
    "group": "1",
    "section": "1",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -910,24 +920,17 @@
      "end": "11:00",
      "room": "Poblado Bloque 34 Aula 203",
      "teacher": "Andres Vasquez Restrepo"
-    },
-    {
-     "date": "2027-05-29",
-     "start": "14:00",
-     "end": "15:00",
-     "room": null,
-     "teacher": "Andres Vasquez Restrepo"
     }
    ],
    "start": "2027-03-19",
-   "end": "2027-05-29",
+   "end": "2027-04-10",
    "teachers": [
     "Andres Vasquez Restrepo"
    ],
    "rooms": [
     "Poblado Bloque 34 Aula 203"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MCDA-SI7009-2-pri",
@@ -955,7 +958,8 @@
    "semester": "Primer semestre",
    "group": "2",
    "section": "2",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -999,24 +1003,17 @@
      "end": "11:00",
      "room": "Poblado Bloque 34 Aula 302",
      "teacher": "Pablo Andres Saldarriaga Aristizabal"
-    },
-    {
-     "date": "2027-05-29",
-     "start": "14:00",
-     "end": "15:00",
-     "room": null,
-     "teacher": "Pablo Andres Saldarriaga Aristizabal"
     }
    ],
    "start": "2027-03-19",
-   "end": "2027-05-29",
+   "end": "2027-04-10",
    "teachers": [
     "Pablo Andres Saldarriaga Aristizabal"
    ],
    "rooms": [
     "Poblado Bloque 34 Aula 302"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MCDA-SI7009-3-pri",
@@ -1044,7 +1041,8 @@
    "semester": "Primer semestre",
    "group": "3",
    "section": "3",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -1088,22 +1086,15 @@
      "end": "11:00",
      "room": "Poblado Bloque 16 Aula 204",
      "teacher": null
-    },
-    {
-     "date": "2027-05-29",
-     "start": "14:00",
-     "end": "15:00",
-     "room": null,
-     "teacher": null
     }
    ],
    "start": "2027-03-19",
-   "end": "2027-05-29",
+   "end": "2027-04-10",
    "teachers": [],
    "rooms": [
     "Poblado Bloque 16 Aula 204"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MCDA-SI7006-1-pri",
@@ -1137,7 +1128,8 @@
    "semester": "Primer semestre",
    "group": "1",
    "section": "1",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -1181,24 +1173,17 @@
      "end": "11:00",
      "room": "Poblado Bloque 34 Aula 302",
      "teacher": "Edwin Nelson Montoya Munera"
-    },
-    {
-     "date": "2027-05-29",
-     "start": "15:00",
-     "end": "16:00",
-     "room": null,
-     "teacher": "Edwin Nelson Montoya Munera"
     }
    ],
    "start": "2027-04-16",
-   "end": "2027-05-29",
+   "end": "2027-05-08",
    "teachers": [
     "Edwin Nelson Montoya Munera"
    ],
    "rooms": [
     "Poblado Bloque 34 Aula 302"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MCDA-SI7006-2-pri",
@@ -1226,7 +1211,8 @@
    "semester": "Primer semestre",
    "group": "2",
    "section": "2",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -1270,22 +1256,15 @@
      "end": "11:00",
      "room": "Poblado Bloque 33 Aula 202",
      "teacher": null
-    },
-    {
-     "date": "2027-05-29",
-     "start": "15:00",
-     "end": "16:00",
-     "room": null,
-     "teacher": null
     }
    ],
    "start": "2027-04-16",
-   "end": "2027-05-29",
+   "end": "2027-05-08",
    "teachers": [],
    "rooms": [
     "Poblado Bloque 33 Aula 202"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MCDA-SI7006-3-pri",
@@ -1313,7 +1292,8 @@
    "semester": "Primer semestre",
    "group": "3",
    "section": "3",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -1357,22 +1337,15 @@
      "end": "11:00",
      "room": "Poblado Bloque 16 Aula 204",
      "teacher": null
-    },
-    {
-     "date": "2027-05-29",
-     "start": "15:00",
-     "end": "16:00",
-     "room": null,
-     "teacher": null
     }
    ],
    "start": "2027-04-16",
-   "end": "2027-05-29",
+   "end": "2027-05-08",
    "teachers": [],
    "rooms": [
     "Poblado Bloque 16 Aula 204"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MCDA-SI7007-1-pri",
@@ -1400,7 +1373,8 @@
    "semester": "Primer semestre",
    "group": "1",
    "section": "1",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -1444,13 +1418,6 @@
      "end": "11:00",
      "room": "Poblado Bloque 33 Aula 203",
      "teacher": "Alberto Mauricio Arias Correa"
-    },
-    {
-     "date": "2027-05-29",
-     "start": "16:00",
-     "end": "17:00",
-     "room": null,
-     "teacher": "Alberto Mauricio Arias Correa"
     }
    ],
    "start": "2027-05-14",
@@ -1461,7 +1428,7 @@
    "rooms": [
     "Poblado Bloque 33 Aula 203"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MCDA-SI7007-2-pri",
@@ -1489,7 +1456,8 @@
    "semester": "Primer semestre",
    "group": "2",
    "section": "2",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -1533,13 +1501,6 @@
      "end": "11:00",
      "room": "Poblado Bloque 33 Aula 103",
      "teacher": "Edison Valencia Diaz"
-    },
-    {
-     "date": "2027-05-29",
-     "start": "16:00",
-     "end": "17:00",
-     "room": null,
-     "teacher": "Edison Valencia Diaz"
     }
    ],
    "start": "2027-05-14",
@@ -1550,7 +1511,7 @@
    "rooms": [
     "Poblado Bloque 33 Aula 103"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MCDA-SI7007-3-pri",
@@ -1578,7 +1539,8 @@
    "semester": "Primer semestre",
    "group": "3",
    "section": "3",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -1622,13 +1584,6 @@
      "end": "11:00",
      "room": "Poblado Bloque 17 Aula 203",
      "teacher": null
-    },
-    {
-     "date": "2027-05-29",
-     "start": "16:00",
-     "end": "17:00",
-     "room": null,
-     "teacher": null
     }
    ],
    "start": "2027-05-14",
@@ -1637,7 +1592,7 @@
    "rooms": [
     "Poblado Bloque 17 Aula 203"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MCDA-SI7015-1-seg",
@@ -1665,6 +1620,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 12,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -1732,7 +1688,8 @@
    "semester": "Segundo semestre",
    "group": "1",
    "section": "1",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -1776,22 +1733,15 @@
      "end": "11:00",
      "room": "Poblado Bloque 34 Aula 203",
      "teacher": null
-    },
-    {
-     "date": "2027-06-05",
-     "start": "17:00",
-     "end": "18:00",
-     "room": null,
-     "teacher": null
     }
    ],
    "start": "2027-02-12",
-   "end": "2027-06-05",
+   "end": "2027-02-27",
    "teachers": [],
    "rooms": [
     "Poblado Bloque 34 Aula 203"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MCDA-SI7002-1-seg",
@@ -1813,6 +1763,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -1888,6 +1839,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 36,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -1984,7 +1936,8 @@
    "semester": "Segundo semestre",
    "group": "1",
    "section": "1",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -2028,24 +1981,17 @@
      "end": "11:00",
      "room": "Poblado Bloque 33 Aula 103",
      "teacher": "Juan David Martinez Vargas"
-    },
-    {
-     "date": "2027-06-05",
-     "start": "18:00",
-     "end": "19:00",
-     "room": null,
-     "teacher": "Juan David Martinez Vargas"
     }
    ],
    "start": "2027-03-12",
-   "end": "2027-06-05",
+   "end": "2027-04-03",
    "teachers": [
     "Juan David Martinez Vargas"
    ],
    "rooms": [
     "Poblado Bloque 33 Aula 103"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MCDA-SI7012-1-seg",
@@ -2066,7 +2012,8 @@
    "semester": "Segundo semestre",
    "group": "1",
    "section": "1",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -2110,24 +2057,17 @@
      "end": "11:00",
      "room": "Poblado Bloque 33 Aula 103",
      "teacher": "Juan Carlos Montoya Mendoza"
-    },
-    {
-     "date": "2027-05-29",
-     "start": "19:00",
-     "end": "20:00",
-     "room": null,
-     "teacher": "Juan Carlos Montoya Mendoza"
     }
    ],
    "start": "2027-04-09",
-   "end": "2027-05-29",
+   "end": "2027-04-24",
    "teachers": [
     "Juan Carlos Montoya Mendoza"
    ],
    "rooms": [
     "Poblado Bloque 33 Aula 103"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MCDA-SI7013-1-ter",
@@ -2155,6 +2095,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 72,
+   "integratorHours": 0,
    "directed": true,
    "sessions": [],
    "start": "2027-01-17",
@@ -2188,6 +2129,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -2269,6 +2211,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -2344,6 +2287,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -2417,6 +2361,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -2492,6 +2437,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -2567,6 +2513,7 @@
    "group": "1",
    "section": "1",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -2640,6 +2587,7 @@
    "group": "1",
    "section": "5",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -2712,7 +2660,8 @@
    "semester": "Primer semestre",
    "group": "1",
    "section": "4",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -2756,22 +2705,15 @@
      "end": "11:00",
      "room": "Poblado Bloque 17 Aula 201",
      "teacher": null
-    },
-    {
-     "date": "2027-07-17",
-     "start": "15:00",
-     "end": "16:00",
-     "room": null,
-     "teacher": null
     }
    ],
    "start": "2027-06-11",
-   "end": "2027-07-17",
+   "end": "2027-06-26",
    "teachers": [],
    "rooms": [
     "Poblado Bloque 17 Aula 201"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MIA-SI7009-4-pri",
@@ -2792,7 +2734,8 @@
    "semester": "Primer semestre",
    "group": "1",
    "section": "4",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -2836,23 +2779,16 @@
      "end": "11:00",
      "room": "Poblado Bloque 17 Aula 201",
      "teacher": null
-    },
-    {
-     "date": "2027-07-17",
-     "start": "14:00",
-     "end": "15:00",
-     "room": null,
-     "teacher": null
     }
    ],
    "start": "2027-05-21",
-   "end": "2027-07-17",
+   "end": "2027-06-05",
    "teachers": [],
    "rooms": [
     "Poblado Bloque 17 Aula 201",
     "Poblado Bloque 17 Aula 202"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MIA-SI7011-2-pri",
@@ -2873,7 +2809,8 @@
    "semester": "Primer semestre",
    "group": "1",
    "section": "2",
-   "plannedHours": 24,
+   "plannedHours": 23,
+   "integratorHours": 1,
    "directed": false,
    "sessions": [
     {
@@ -2917,13 +2854,6 @@
      "end": "11:00",
      "room": "Poblado Bloque 17 Aula 201",
      "teacher": null
-    },
-    {
-     "date": "2027-07-17",
-     "start": "16:00",
-     "end": "17:00",
-     "room": null,
-     "teacher": null
     }
    ],
    "start": "2027-07-02",
@@ -2932,7 +2862,7 @@
    "rooms": [
     "Poblado Bloque 17 Aula 201"
    ],
-   "scheduledHours": 24.0
+   "scheduledHours": 23.0
   },
   {
    "id": "MIA-NM7001-4-pri",
@@ -2954,6 +2884,7 @@
    "group": "1",
    "section": "4",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -3028,6 +2959,7 @@
    "group": "1",
    "section": "4",
    "plannedHours": 24,
+   "integratorHours": 0,
    "directed": false,
    "sessions": [
     {
@@ -3106,13 +3038,13 @@
     },
     {
      "code": "ST1605",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     },
     {
      "code": "ST1623",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -3211,13 +3143,13 @@
     },
     {
      "code": "ST1607",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     },
     {
      "code": "ST1625",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -3302,13 +3234,13 @@
     },
     {
      "code": "ST1608",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     },
     {
      "code": "ST1626",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -3407,13 +3339,13 @@
     },
     {
      "code": "ST1606",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     },
     {
      "code": "ST1624",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -3512,13 +3444,13 @@
     },
     {
      "code": "ST1605",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     },
     {
      "code": "ST1623",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -3617,13 +3549,13 @@
     },
     {
      "code": "ST1607",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     },
     {
      "code": "ST1625",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -3708,13 +3640,13 @@
     },
     {
      "code": "ST1608",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     },
     {
      "code": "ST1626",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -3813,13 +3745,13 @@
     },
     {
      "code": "ST1606",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     },
     {
      "code": "ST1624",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -3912,7 +3844,7 @@
     },
     {
      "code": "ST1704",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -4005,7 +3937,7 @@
     },
     {
      "code": "ST1707",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -4091,7 +4023,7 @@
     },
     {
      "code": "ST1706",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -4184,7 +4116,7 @@
     },
     {
      "code": "ST1708",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -4572,7 +4504,7 @@
    "codes": [
     {
      "code": "ST1613",
-     "level": "Pre",
+     "level": null,
      "class": null,
      "program": null
     }
@@ -4798,29 +4730,9 @@
    "detail": "Docente por asignar"
   },
   {
-   "type": "sin_aula",
-   "offering": "MCDA-SI7009-1-pri",
-   "detail": "1 sesión(es) sin aula asignada"
-  },
-  {
-   "type": "sin_aula",
-   "offering": "MCDA-SI7009-2-pri",
-   "detail": "1 sesión(es) sin aula asignada"
-  },
-  {
    "type": "sin_docente",
    "offering": "MCDA-SI7009-3-pri",
    "detail": "Docente por asignar"
-  },
-  {
-   "type": "sin_aula",
-   "offering": "MCDA-SI7009-3-pri",
-   "detail": "1 sesión(es) sin aula asignada"
-  },
-  {
-   "type": "sin_aula",
-   "offering": "MCDA-SI7006-1-pri",
-   "detail": "1 sesión(es) sin aula asignada"
   },
   {
    "type": "sin_docente",
@@ -4828,29 +4740,9 @@
    "detail": "Docente por asignar"
   },
   {
-   "type": "sin_aula",
-   "offering": "MCDA-SI7006-2-pri",
-   "detail": "1 sesión(es) sin aula asignada"
-  },
-  {
    "type": "sin_docente",
    "offering": "MCDA-SI7006-3-pri",
    "detail": "Docente por asignar"
-  },
-  {
-   "type": "sin_aula",
-   "offering": "MCDA-SI7006-3-pri",
-   "detail": "1 sesión(es) sin aula asignada"
-  },
-  {
-   "type": "sin_aula",
-   "offering": "MCDA-SI7007-1-pri",
-   "detail": "1 sesión(es) sin aula asignada"
-  },
-  {
-   "type": "sin_aula",
-   "offering": "MCDA-SI7007-2-pri",
-   "detail": "1 sesión(es) sin aula asignada"
   },
   {
    "type": "sin_docente",
@@ -4858,29 +4750,9 @@
    "detail": "Docente por asignar"
   },
   {
-   "type": "sin_aula",
-   "offering": "MCDA-SI7007-3-pri",
-   "detail": "1 sesión(es) sin aula asignada"
-  },
-  {
    "type": "sin_docente",
    "offering": "MCDA-NM7003-1-seg",
    "detail": "Docente por asignar"
-  },
-  {
-   "type": "sin_aula",
-   "offering": "MCDA-NM7003-1-seg",
-   "detail": "1 sesión(es) sin aula asignada"
-  },
-  {
-   "type": "sin_aula",
-   "offering": "MCDA-SI7011-1-seg",
-   "detail": "1 sesión(es) sin aula asignada"
-  },
-  {
-   "type": "sin_aula",
-   "offering": "MCDA-SI7012-1-seg",
-   "detail": "1 sesión(es) sin aula asignada"
   },
   {
    "type": "sin_docente",
@@ -4903,29 +4775,14 @@
    "detail": "Docente por asignar"
   },
   {
-   "type": "sin_aula",
-   "offering": "MIA-SI7006-4-pri",
-   "detail": "1 sesión(es) sin aula asignada"
-  },
-  {
    "type": "sin_docente",
    "offering": "MIA-SI7009-4-pri",
    "detail": "Docente por asignar"
   },
   {
-   "type": "sin_aula",
-   "offering": "MIA-SI7009-4-pri",
-   "detail": "1 sesión(es) sin aula asignada"
-  },
-  {
    "type": "sin_docente",
    "offering": "MIA-SI7011-2-pri",
    "detail": "Docente por asignar"
-  },
-  {
-   "type": "sin_aula",
-   "offering": "MIA-SI7011-2-pri",
-   "detail": "1 sesión(es) sin aula asignada"
   },
   {
    "type": "sin_docente",
