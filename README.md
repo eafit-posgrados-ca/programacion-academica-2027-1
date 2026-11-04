@@ -6,6 +6,8 @@ Tablero web de la programación académica de:
 - **MCDA** — Maestría en Ciencia de Datos y Analítica
 - **ECD** — Especialización en Ciencia de Datos y Analítica
 - **EDS** — Especialización en Desarrollo de Software
+- **MMA** — Maestría en Matemáticas Aplicadas
+- **DMA** — Doctorado en Matemáticas Aplicadas (hoja `DIM` del Excel)
 
 Vistas: resumen por programa, cronograma (Gantt) del semestre, **semana y electivas**
 (calendario semanal por horas donde los cursos simultáneos se ven lado a lado, con un
@@ -41,11 +43,14 @@ git add docs/data/programacion.json && git commit -m "Actualiza programación" &
 
 Qué lee el script:
 
-- **Excel del SIS** (`--sis`): hojas `MCDA` y `MIA`. Las filas con el mismo
+- **Excel del SIS** (`--sis`): hojas `MCDA`, `MIA`, `MMA` y `DIM`. Las filas con el mismo
   *ID Sección Combinada* se agrupan en un solo curso. Los códigos `SI7xxx/NM7xxx`
   se asignan a MCDA, `SI6xxx/NM6xxx` a ECD; los demás (pregrado, doctorado) se
   muestran como códigos combinados. Las sesiones se generan con cada día de la
   semana entre la fecha inicial y final de cada franja, omitiendo festivos.
+  En MMA y DMA los cursos sin aula con franjas de relleno (domingo, 30 min o
+  metodología de proyecto/dirigido/examen) se muestran como trabajo dirigido, sin
+  sesiones. Una clase que aparece en ambas hojas se une en un solo curso.
 - **Calendario EDS** (`--eds`): hoja `2027-1 V1`, bloques de cada curso con sus
   fechas explícitas, y la lista de festivos y fechas académicas.
 

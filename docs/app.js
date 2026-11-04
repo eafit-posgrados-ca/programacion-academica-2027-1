@@ -1,7 +1,9 @@
 "use strict";
 
-const PROGRAM_SHORT = { MIA: "MIA", MCDA: "MCDA", ECD: "ECD", EDS: "EDS" };
-const SEMESTER_ORDER = ["Primer semestre", "Segundo semestre", "Tercer semestre", "Electivas"];
+const PROGRAM_SHORT = { MIA: "MIA", MCDA: "MCDA", ECD: "ECD", EDS: "EDS", MMA: "MMA", DMA: "DMA" };
+const OFFER = "Cursos del programa"; // MMA y DMA: oferta sin cohortes por semestre
+const SEMESTER_ORDER = ["Primer semestre", "Segundo semestre", "Tercer semestre", "Electivas", OFFER];
+const NO_COHORT = new Set(["Electivas", OFFER]);
 const MONTHS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
 const MONTHS_SHORT = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
 const DOW = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"];
@@ -13,6 +15,7 @@ const ALERT_TYPES = {
   festivo: { sev: "serious", icon: "!", label: "Sesión programada en festivo" },
   dia_no_coincide: { sev: "serious", icon: "!", label: "Fecha que no coincide con el día indicado" },
   fila_sin_sesiones: { sev: "serious", icon: "!", label: "Franja sin fechas válidas" },
+  combinada_distinta: { sev: "serious", icon: "!", label: "Sección combinada con horarios distintos" },
   horas: { sev: "warning", icon: "–", label: "Horas programadas distintas a las del curso" },
   sin_docente: { sev: "warning", icon: "?", label: "Docente por asignar" },
   sin_aula: { sev: "warning", icon: "?", label: "Aula por asignar" },
@@ -39,7 +42,7 @@ const programName = (id) => DATA.programs.find((p) => p.id === id)?.name ?? id;
 const pill = (p) => `<span class="pill"><span class="dot" style="background:${color(p)}"></span>${PROGRAM_SHORT[p]}</span>`;
 const visiblePrograms = (o) => o.programs.filter((p) => state.programs.has(p));
 const mainProgram = (o) => visiblePrograms(o)[0] ?? o.programs[0];
-const SEM_LABEL = { "Primer semestre": ["1.er sem", "S1"], "Segundo semestre": ["2.º sem", "S2"], "Tercer semestre": ["3.er sem", "S3"], Electivas: ["Electiva", "E"] };
+const SEM_LABEL = { "Primer semestre": ["1.er sem", "S1"], "Segundo semestre": ["2.º sem", "S2"], "Tercer semestre": ["3.er sem", "S3"], Electivas: ["Electiva", "E"], [OFFER]: ["Curso", "C"] };
 const semBadge = (o, short) => `<span class="sem" title="${esc(o.semester)}">${SEM_LABEL[o.semester]?.[short ? 1 : 0] ?? esc(o.semester)}</span>`;
 const LEVEL_LABEL = { PREG: "Pregrado", MSTR: "Maestría", ESPE: "Especialización", DOCT: "Doctorado", "Pre/Pos": "Pre/Pos", Pos: "Posgrado" };
 const codeLabel = (c) => c.program ? PROGRAM_SHORT[c.program] : (LEVEL_LABEL[c.level] ?? "Pregrado");
@@ -283,10 +286,12 @@ function renderGantt(rows) {
     for (const sem of SEMESTER_ORDER) {
       const ss = os.filter((o) => o.semester === sem);
       if (!ss.length) continue;
-      const groups = [...new Set(ss.map((o) => o.group))].sort();
+      // Electivas y oferta de MMA/DMA no se separan por grupo
+      const split = !NO_COHORT.has(sem);
+      const groups = split ? [...new Set(ss.map((o) => o.group))].sort() : [null];
       for (const g of groups) {
-        html += `<div class="g-sub">${esc(sem)}${sem !== "Electivas" && groups.length > 1 ? ` · Grupo ${esc(g)}` : ""}</div>`;
-        for (const o of ss.filter((x) => x.group === g).sort((a, b) => a.start.localeCompare(b.start))) {
+        html += `<div class="g-sub">${esc(sem)}${split && groups.length > 1 ? ` · Grupo ${esc(g)}` : ""}</div>`;
+        for (const o of ss.filter((x) => !split || x.group === g).sort((a, b) => a.course.localeCompare(b.course, "es") * (split ? 0 : 1) || a.start.localeCompare(b.start))) {
           const others = o.programs.filter((x) => x !== p.id);
           const ticks = o.sessions.map((s) => `<div class="g-tick" style="left:${(pct(s.date) + pct(s.date, true)) / 2}%"></div>`).join("");
           const left = pct(o.directed ? o.start : o.sessions[0]?.date ?? o.start);
@@ -363,10 +368,10 @@ const overlap = (a, b) => mins(a.start) < mins(b.end) && mins(b.start) < mins(a.
 
 // Cohorte = grupo de estudiantes que toma junto los cursos obligatorios de un semestre
 function cohortKey(o) {
-  if (o.semester === "Electivas") return null;
+  if (NO_COHORT.has(o.semester)) return null;
   return `${visiblePrograms(o).map((p) => PROGRAM_SHORT[p]).join("/")} · ${o.semester} · G${o.group}`;
 }
-const occupantKey = (o) => cohortKey(o) ?? `Electiva · ${o.course}`;
+const occupantKey = (o) => cohortKey(o) ?? `${o.semester === "Electivas" ? "Electiva" : visiblePrograms(o).map((p) => PROGRAM_SHORT[p]).join("/")} · ${o.course}`;
 
 function sessionsByDate(rows) {
   const m = new Map();
@@ -447,7 +452,7 @@ function renderPlan(rows, byDate, plan) {
 function renderHeat(rows) {
   const p = state.plan;
   const from = p.from || "2027-01-01", to = p.to || "2027-07-31";
-  $("#heat-hint").textContent = `Número de cohortes con clase en cada hora y día, entre ${fmtDate(from)} y ${fmtDate(to)} (rango de fechas de la electiva). Las electivas existentes se ven en el detalle. Clic en una celda para marcar ese día.`;
+  $("#heat-hint").textContent = `Cohortes (y cursos de MMA/DMA) con clase en cada hora y día, entre ${fmtDate(from)} y ${fmtDate(to)} (rango de fechas de la electiva). Un punto indica que solo hay electivas. Clic en una celda para marcar ese día.`;
   const cells = Array.from({ length: HOUR1 - HOUR0 }, () => Array.from({ length: 7 }, () => ({ coh: new Set(), el: new Set() })));
   for (const o of rows) for (const s of o.sessions) {
     if (s.date < from || s.date > to) continue;
@@ -456,7 +461,9 @@ function renderHeat(rows) {
       if (mins(s.start) < (h + 1) * 60 && h * 60 < mins(s.end)) {
         const c = cells[h - HOUR0][wd];
         const k = cohortKey(o);
-        if (k) c.coh.add(k); else c.el.add(o.course);
+        if (k) c.coh.add(k);
+        else if (o.semester === OFFER) c.coh.add(occupantKey(o));
+        else c.el.add(o.course);
       }
     }
   }
@@ -474,11 +481,11 @@ function renderHeat(rows) {
       html += `<div class="c ${inPlan(h, wd) ? "sel" : ""}" data-h="${i}" data-wd="${wd}" style="background:${bg};color:${fg}">${v || (c.el.size ? "·" : "")}</div>`;
     });
   });
-  $("#heat").innerHTML = `<div class="heat">${html}</div><div class="heat-scale"><span>0</span><span class="bar"></span><span>${max} cohortes</span></div>`;
+  $("#heat").innerHTML = `<div class="heat">${html}</div><div class="heat-scale"><span>0</span><span class="bar"></span><span>${max} ${max === 1 ? "cohorte o curso" : "cohortes o cursos"}</span></div>`;
   $("#heat").querySelectorAll(".c").forEach((el) => {
     const c = cells[+el.dataset.h][+el.dataset.wd], h = HOUR0 + +el.dataset.h;
     bindTip(el, () => `<div class="tt-title">${DAY_NAMES[+el.dataset.wd]} ${h}:00–${h + 1}:00</div>` +
-      (c.coh.size ? `<div>${[...c.coh].sort().map(esc).join("<br>")}</div>` : `<div style="color:var(--muted)">Ninguna cohorte con clase</div>`) +
+      (c.coh.size ? `<div>${[...c.coh].sort().map(esc).join("<br>")}</div>` : `<div style="color:var(--muted)">Ninguna cohorte ni curso con clase</div>`) +
       (c.el.size ? `<div style="margin-top:4px;color:var(--text-2)">Electivas: ${[...c.el].map(esc).join(", ")}</div>` : ""));
     el.addEventListener("click", () => {
       const wd = +el.dataset.wd;
@@ -766,7 +773,7 @@ async function init() {
   BY_ID = new Map(DATA.offerings.map((o) => [o.id, o]));
   $("#period").textContent = DATA.period;
   const gen = new Date(DATA.generated);
-  $("#footer").innerHTML = `Datos generados el ${gen.getDate()} de ${MONTHS[gen.getMonth()]} de ${gen.getFullYear()} a partir de los archivos de programación académica (SIS: MCDA, ECD, MIA · calendario EDS). Los nombres de cursos y docentes provienen de esos archivos.`;
+  $("#footer").innerHTML = `Datos generados el ${gen.getDate()} de ${MONTHS[gen.getMonth()]} de ${gen.getFullYear()} a partir de los archivos de programación académica (SIS: MCDA, ECD, MIA, MMA, DMA · calendario EDS). Los nombres de cursos y docentes provienen de esos archivos.`;
   readHash();
   buildFilters();
   initPlanner();

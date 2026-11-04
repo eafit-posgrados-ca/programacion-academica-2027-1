@@ -16,6 +16,8 @@
   --p-MCDA: #eb6834;
   --p-ECD: #1baf7a;
   --p-EDS: #eda100;
+  --p-MMA: #e87ba4;
+  --p-DMA: #008300;
   --good: #0ca30c;
   --warning: #fab219;
   --serious: #ec835a;
@@ -43,6 +45,8 @@
     --p-MCDA: #d95926;
     --p-ECD: #199e70;
     --p-EDS: #c98500;
+    --p-MMA: #d55181;
+    --p-DMA: #008300;
     --shadow: none;
   }
 }
@@ -64,6 +68,8 @@
   --p-MCDA: #d95926;
   --p-ECD: #199e70;
   --p-EDS: #c98500;
+  --p-MMA: #d55181;
+  --p-DMA: #008300;
   --shadow: none;
 }
 

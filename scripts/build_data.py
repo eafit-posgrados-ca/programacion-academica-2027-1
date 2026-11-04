@@ -25,15 +25,22 @@ PROGRAMS = [
     {"id": "MCDA", "name": "Maestría en Ciencia de Datos y Analítica"},
     {"id": "ECD", "name": "Especialización en Ciencia de Datos y Analítica"},
     {"id": "EDS", "name": "Especialización en Desarrollo de Software"},
+    {"id": "MMA", "name": "Maestría en Matemáticas Aplicadas"},
+    {"id": "DMA", "name": "Doctorado en Matemáticas Aplicadas"},
 ]
+# Hoja del SIS -> programa (MCDA se reparte entre MCDA y ECD según el código)
+SHEET_PROGRAM = {"MIA": "MIA", "MMA": "MMA", "DIM": "DMA"}
+# Hojas sin bloques por semestre: los estudiantes eligen cursos de la oferta
+OFFER = "Cursos del programa"
+NO_COHORT = {"Electivas", OFFER}
 
 DAYS = {
     "lunes": 0, "martes": 1, "miercoles": 2, "miércoles": 2, "jueves": 3,
     "viernes": 4, "sabado": 5, "sábado": 5, "domingo": 6,
 }
 
-# Columnas de las hojas exportadas del SIS (MCDA, MIA)
-C_GRADO, C_CODE, C_NAME, C_SECTION, C_CLASS = 0, 2, 4, 5, 6
+# Columnas de las hojas exportadas del SIS (MCDA, MIA, MMA, DIM)
+C_GRADO, C_CODE, C_NAME, C_SECTION, C_CLASS, C_METHOD = 0, 2, 4, 5, 6, 18
 C_START, C_END, C_TSTART, C_TEND, C_DAYS, C_ROOM, C_TEACHER = 10, 11, 12, 13, 14, 15, 16
 C_TOTAL_HRS, C_SCHED_HRS, C_COMBINED = 19, 30, 35
 
@@ -54,9 +61,11 @@ def sis_teacher(raw):
     return clean_name(parts[3] if len(parts) >= 4 else raw)
 
 
-def program_for_code(code, sheet):
+def program_for_code(code, sheet, level=None):
     if sheet == "MIA":
         return "MIA"
+    if sheet in SHEET_PROGRAM:
+        return None if level == "PREG" else SHEET_PROGRAM[sheet]
     if re.match(r"^(SI|NM)7", code):
         return "MCDA"
     if re.match(r"^(SI|NM)6", code):
@@ -111,15 +120,15 @@ def parse_sis(path, holidays):
     holiday_set = {h["date"] for h in holidays}
     offerings, issues = [], []
 
-    for sheet in ("MCDA", "MIA"):
+    for sheet in ("MCDA", "MIA", "MMA", "DIM"):
         ws = wb[sheet]
-        block = "Primer semestre"
+        block = "Primer semestre" if sheet in ("MCDA", "MIA") else OFFER
         groups = defaultdict(list)
         order = []
         for r in ws.iter_rows(values_only=True):
             if r[C_GRADO] and isinstance(r[C_GRADO], str) and r[C_CODE] is None:
                 label = r[C_GRADO].strip()
-                if label != "Grado":
+                if label != "Grado" and block != OFFER:
                     block = re.sub(r"\s+MCDA$", "", re.sub(r"\s+", " ", label)).capitalize()
                 continue
             if r[C_CODE] is None or r[C_GRADO] == "Grado":
@@ -129,6 +138,25 @@ def parse_sis(path, holidays):
                 order.append(key)
             groups[key].append(r)
 
+        # Una sección combinada cuyos códigos tienen horarios distintos se separa (y se reporta)
+        sig = lambda rs: sorted((str(r[C_START]), str(r[C_END]), str(r[C_TSTART]), str(r[C_DAYS])) for r in rs)
+        for key in list(order):
+            by_code = defaultdict(list)
+            for r in groups[key]:
+                by_code[r[C_CODE]].append(r)
+            if len(by_code) < 2:
+                continue
+            ref = sig(next(iter(by_code.values())))
+            for code, rs in list(by_code.items())[1:]:
+                if sig(rs) != ref:
+                    new = (*key[:2], f"{code}-{rs[0][C_SECTION]}")
+                    groups[key] = [r for r in groups[key] if r[C_CODE] != code]
+                    groups[new] = rs
+                    order.insert(order.index(key) + 1, new)
+                    issues.append({"type": "combinada_distinta", "offering": f"{sheet}-{code}-{rs[0][C_SECTION]}-{key[1][:3].lower()}",
+                                   "detail": f"{code} está en la sección combinada {key[2]} con "
+                                             f"{next(iter(by_code))}, pero su horario es distinto"})
+
         for key in order:
             rows = groups[key]
             sheet, block, _ = key
@@ -137,21 +165,29 @@ def parse_sis(path, holidays):
                 if r[C_CODE] not in seen:
                     seen.add(r[C_CODE])
                     codes.append({"code": r[C_CODE], "level": r[C_GRADO], "class": r[C_CLASS],
-                                  "program": program_for_code(r[C_CODE], sheet)})
+                                  "program": program_for_code(r[C_CODE], sheet, r[C_GRADO])})
             programs = sorted({c["program"] for c in codes if c["program"]},
                               key=[p["id"] for p in PROGRAMS].index)
+            if not programs and sheet in SHEET_PROGRAM:
+                programs = [SHEET_PROGRAM[sheet]]  # curso de pregrado ofrecido en la hoja del programa
             # Nombre: el del código de posgrado principal
-            main = next((r for r in rows if program_for_code(r[C_CODE], sheet) in ("MIA", "MCDA")), rows[0])
+            main = next((r for r in rows if program_for_code(r[C_CODE], sheet, r[C_GRADO]) in ("MIA", "MCDA", "MMA", "DMA")),
+                        next((r for r in rows if program_for_code(r[C_CODE], sheet, r[C_GRADO])), rows[0]))
             name = main[C_NAME]
             # Las filas de reunión se repiten por cada código combinado: usar las del principal
             meetings = [r for r in rows if r[C_CODE] == main[C_CODE]]
             # La hora de Proyecto Integrador (fila de 1 h sin aula) no hace parte de la programación
-            integrator = [r for r in meetings if r[C_SCHED_HRS] == 1 and not r[C_ROOM]]
+            integrator = [r for r in meetings if r[C_SCHED_HRS] == 1 and not r[C_ROOM] and sheet in ("MCDA", "MIA")]
             meetings = [r for r in meetings if r not in integrator]
             integrator_hours = sum(r[C_SCHED_HRS] for r in integrator)
             planned = main[C_TOTAL_HRS] - integrator_hours
+            # Trabajo dirigido: sin aula y con franja de relleno (domingo, 30 min o metodología
+            # de proyecto/dirigido/examen), no una clase presencial con horario fijo
             directed = all(not r[C_ROOM] for r in meetings) and all(
-                "domingo" in str(r[C_DAYS]).lower() for r in meetings)
+                "domingo" in str(r[C_DAYS]).lower()
+                or re.search(r"Proyecto|Dirigido|Exam|Conferencia", str(r[C_METHOD] or ""))
+                or (dt.datetime.strptime(hhmm(r[C_TEND]), "%H:%M") - dt.datetime.strptime(hhmm(r[C_TSTART]), "%H:%M")).seconds <= 1800
+                for r in meetings)
 
             sessions = []
             for r in meetings:
@@ -196,7 +232,19 @@ def parse_sis(path, holidays):
                 "teachers": sorted({s["teacher"] for s in sessions if s["teacher"]}),
                 "rooms": sorted({s["room"] for s in sessions if s["room"]}),
             })
-    return offerings, issues
+
+    # La misma clase (mismo número) puede estar en las hojas MMA y DIM: se une en un solo curso
+    merged = {}
+    for o in offerings:
+        k = (o["codes"][0]["class"], o["codes"][0]["code"]) if o["sheet"] in ("MMA", "DIM") else o["id"]
+        if k in merged:
+            a = merged[k]
+            keep, other = (a, o) if a["rooms"] or not o["rooms"] else (o, a)
+            keep["programs"] = sorted(set(a["programs"]) | set(o["programs"]), key=[p["id"] for p in PROGRAMS].index)
+            merged[k] = keep
+        else:
+            merged[k] = o
+    return list(merged.values()), issues
 
 
 # ---------------------------------------------------------------- hoja EDS
@@ -340,7 +388,8 @@ def validate(offerings, holidays):
             for s in o["sessions"]:
                 for k in key_fn(o, s):
                     buckets[(s["date"], k)].append((o, s))
-        seen = set()
+        # Un cruce entre el mismo par de cursos se reporta una sola vez, con todas sus fechas
+        found = {}
         for (date, k), items in buckets.items():
             for i in range(len(items)):
                 for j in range(i + 1, len(items)):
@@ -348,19 +397,23 @@ def validate(offerings, holidays):
                     if o1["id"] == o2["id"]:
                         continue
                     if minutes(s1["start"]) < minutes(s2["end"]) and minutes(s2["start"]) < minutes(s1["end"]):
-                        sig = (kind, date, k, *sorted([o1["id"], o2["id"]]))
-                        if sig in seen:
-                            continue
-                        seen.add(sig)
-                        issues.append({"type": kind, "offering": o1["id"], "other": o2["id"], "date": date,
-                                       "detail": f"{label} {k}: {o1['course']} y {o2['course']} "
-                                                 f"({s1['start']}–{s1['end']} / {s2['start']}–{s2['end']})"})
+                        if o1["id"] > o2["id"]:
+                            (o1, s1), (o2, s2) = (o2, s2), (o1, s1)
+                        f = found.setdefault((k, o1["id"], o2["id"]), {"o1": o1, "o2": o2, "s1": s1, "s2": s2, "dates": set()})
+                        f["dates"].add(date)
+        for (k, _, _), f in found.items():
+            dates = sorted(f["dates"])
+            when = f"{len(dates)} fechas" if len(dates) > 1 else "1 fecha"
+            issues.append({"type": kind, "offering": f["o1"]["id"], "other": f["o2"]["id"], "date": dates[0],
+                           "dates": dates,
+                           "detail": f"{label} {k}: {f['o1']['course']} y {f['o2']['course']} "
+                                     f"({f['s1']['start']}–{f['s1']['end']} / {f['s2']['start']}–{f['s2']['end']}), {when}"})
 
     overlaps(lambda o, s: [s["room"]] if s["room"] else [], "cruce_aula", "Aula")
     overlaps(lambda o, s: [t.strip() for t in (s["teacher"] or "").split(",") if t.strip()],
              "cruce_docente", "Docente")
     overlaps(lambda o, s: [f"{p} · {o['semester']} · Grupo {o['group']}" for p in o["programs"]]
-             if o["semester"] != "Electivas" else [], "cruce_cohorte", "Cohorte")
+             if o["semester"] not in NO_COHORT else [], "cruce_cohorte", "Cohorte")
     return issues
 
 

@@ -1,6 +1,6 @@
 {
  "period": "2027-1",
- "generated": "2026-11-04T14:54",
+ "generated": "2026-11-04T15:44",
  "programs": [
   {
    "id": "MIA",
@@ -17,6 +17,14 @@
   {
    "id": "EDS",
    "name": "Especialización en Desarrollo de Software"
+  },
+  {
+   "id": "MMA",
+   "name": "Maestría en Matemáticas Aplicadas"
+  },
+  {
+   "id": "DMA",
+   "name": "Doctorado en Matemáticas Aplicadas"
   }
  ],
  "holidays": [
@@ -3016,6 +3024,4030 @@
    "scheduledHours": 24.0
   },
   {
+   "id": "MMA-CM0612-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Topología General",
+   "codes": [
+    {
+     "code": "CM0612",
+     "level": "DOCT",
+     "class": 6998,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0806-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "MMA",
+    "DMA"
+   ],
+   "course": "Análisis Funcional",
+   "codes": [
+    {
+     "code": "CM0806",
+     "level": "DOCT",
+     "class": 6999,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 60,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-19",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-01-26",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-02-02",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-02-09",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-02-16",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-02-23",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-03-02",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-03-09",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-03-16",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-03-23",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-03-30",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-04-06",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-04-13",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-04-20",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-04-27",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-05-04",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-05-11",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-05-18",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-05-25",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-06-01",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    },
+    {
+     "date": "2027-06-08",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 105",
+     "teacher": "Cristhian David Montoya Zambrano"
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-06-12",
+   "teachers": [
+    "Cristhian David Montoya Zambrano"
+   ],
+   "rooms": [
+    "Poblado Bloque 14 Aula 105"
+   ],
+   "scheduledHours": 63.0
+  },
+  {
+   "id": "MMA-CM0812-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Proyecto de Investigación",
+   "codes": [
+    {
+     "code": "CM0812",
+     "level": "MSTR",
+     "class": 7143,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 40,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-02-01",
+   "end": "2027-04-17",
+   "teachers": [
+    "Sergio Steven Ramirez Rico"
+   ],
+   "rooms": []
+  },
+  {
+   "id": "MMA-CM0830-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Transfor. Integral de Señales",
+   "codes": [
+    {
+     "code": "CM0830",
+     "level": "DOCT",
+     "class": 6816,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 60,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-23",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-01-30",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-02-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-02-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-02-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-02-27",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-03-06",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-03-13",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-03-20",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-03-27",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-03",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-10",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-17",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-24",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-08",
+     "start": "08:00",
+     "end": "12:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-08",
+   "teachers": [],
+   "rooms": [],
+   "scheduledHours": 60.0
+  },
+  {
+   "id": "MMA-CM0831-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Optimización Combinatoria",
+   "codes": [
+    {
+     "code": "CM0831",
+     "level": "DOCT",
+     "class": 6995,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 32,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-18",
+   "end": "2027-05-15",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "MMA-CM0841-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Optimización No Lineal",
+   "codes": [
+    {
+     "code": "CM0841",
+     "level": "DOCT",
+     "class": 6997,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "MMA-CM0849-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Mét. Heurísticos para Optimiz.",
+   "codes": [
+    {
+     "code": "CM0849",
+     "level": "DOCT",
+     "class": 6978,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-20",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    },
+    {
+     "date": "2027-01-27",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    },
+    {
+     "date": "2027-02-03",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    },
+    {
+     "date": "2027-02-10",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    },
+    {
+     "date": "2027-02-17",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    },
+    {
+     "date": "2027-02-24",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    },
+    {
+     "date": "2027-03-03",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    },
+    {
+     "date": "2027-03-10",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    },
+    {
+     "date": "2027-03-17",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    },
+    {
+     "date": "2027-03-24",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    },
+    {
+     "date": "2027-03-31",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    },
+    {
+     "date": "2027-04-07",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    },
+    {
+     "date": "2027-04-14",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Juan Carlos Rivera Agudelo"
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-04-17",
+   "teachers": [
+    "Juan Carlos Rivera Agudelo"
+   ],
+   "rooms": [
+    "Poblado Bloque 16 Aula 203"
+   ],
+   "scheduledHours": 39.0
+  },
+  {
+   "id": "MMA-CM0850-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Modelos y Mét. de Optimización",
+   "codes": [
+    {
+     "code": "CM0850",
+     "level": "DOCT",
+     "class": 7154,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-18",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-01-25",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-02-01",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-02-08",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-02-15",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-02-22",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-03-01",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-03-08",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-03-15",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-03-29",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-05",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-12",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-19",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-04-26",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-03",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-17",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-05-24",
+     "start": "17:00",
+     "end": "19:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": [],
+   "scheduledHours": 34.0
+  },
+  {
+   "id": "MMA-CM0864-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Seminario 3",
+   "codes": [
+    {
+     "code": "CM0864",
+     "level": "MSTR",
+     "class": 6818,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-04",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 29 Aula 202",
+     "teacher": "Juan Carlos Duque Cardona"
+    },
+    {
+     "date": "2027-02-11",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 29 Aula 202",
+     "teacher": "Juan Carlos Duque Cardona"
+    },
+    {
+     "date": "2027-02-18",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 29 Aula 202",
+     "teacher": "Juan Carlos Duque Cardona"
+    },
+    {
+     "date": "2027-02-25",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 29 Aula 202",
+     "teacher": "Juan Carlos Duque Cardona"
+    },
+    {
+     "date": "2027-03-04",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 29 Aula 202",
+     "teacher": "Juan Carlos Duque Cardona"
+    },
+    {
+     "date": "2027-03-11",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 29 Aula 202",
+     "teacher": "Juan Carlos Duque Cardona"
+    },
+    {
+     "date": "2027-03-18",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 29 Aula 202",
+     "teacher": "Juan Carlos Duque Cardona"
+    },
+    {
+     "date": "2027-04-01",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 29 Aula 202",
+     "teacher": "Juan Carlos Duque Cardona"
+    },
+    {
+     "date": "2027-04-08",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 29 Aula 202",
+     "teacher": "Juan Carlos Duque Cardona"
+    }
+   ],
+   "start": "2027-02-04",
+   "end": "2027-04-14",
+   "teachers": [
+    "Juan Carlos Duque Cardona"
+   ],
+   "rooms": [
+    "Poblado Bloque 29 Aula 202"
+   ],
+   "scheduledHours": 18.0
+  },
+  {
+   "id": "MMA-CM0868-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Estad. Multivariada Avanzada",
+   "codes": [
+    {
+     "code": "CM0868",
+     "level": "DOCT",
+     "class": 7102,
+     "program": "MMA"
+    },
+    {
+     "code": "CM0924",
+     "level": "PREG",
+     "class": 4252,
+     "program": null
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-18",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-01-25",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-02-01",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-02-08",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-02-15",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-02-22",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-03-01",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-03-08",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-03-15",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-03-29",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-04-05",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-04-12",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-04-19",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-04-26",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-05-03",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-05-17",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    },
+    {
+     "date": "2027-05-24",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 35 Aula 101",
+     "teacher": "Nicolas Prieto Escobar"
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [
+    "Nicolas Prieto Escobar"
+   ],
+   "rooms": [
+    "Poblado Bloque 35 Aula 101"
+   ],
+   "scheduledHours": 34.0
+  },
+  {
+   "id": "MMA-CM0874-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Álgebra Lineal",
+   "codes": [
+    {
+     "code": "CM0874",
+     "level": "DOCT",
+     "class": 6982,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-20",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-01-27",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-02-03",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-02-10",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-02-17",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-02-24",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-03-03",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-03-10",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-03-17",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-03-24",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-03-31",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-04-07",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-04-14",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-04-21",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-04-28",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-05-05",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-05-12",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-05-19",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    },
+    {
+     "date": "2027-05-26",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": "María Amelia Salazar Pinzón"
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [
+    "María Amelia Salazar Pinzón"
+   ],
+   "rooms": [
+    "Poblado Bloque 20 Aula 415"
+   ],
+   "scheduledHours": 38.0
+  },
+  {
+   "id": "MMA-MT5007-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Álgebra Lineal (MMA)",
+   "codes": [
+    {
+     "code": "MT5007",
+     "level": "PREG",
+     "class": 6989,
+     "program": null
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-19",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-01-26",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-02",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-09",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-16",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-23",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-02",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-09",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-16",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-23",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-30",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-06",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-13",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-20",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-27",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-04",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-11",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-18",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-25",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 34 Aula 501"
+   ],
+   "scheduledHours": 38.0
+  },
+  {
+   "id": "MMA-CM0874-2-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Álgebra Lineal",
+   "codes": [
+    {
+     "code": "CM0874",
+     "level": "DOCT",
+     "class": 6985,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-19",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-01-26",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-02",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-09",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-16",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-23",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-02",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-09",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-16",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-23",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-30",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-06",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-13",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-20",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-27",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-04",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-11",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-18",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-25",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 34 Aula 501",
+     "teacher": null
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 34 Aula 501"
+   ],
+   "scheduledHours": 38.0
+  },
+  {
+   "id": "MMA-CM0875-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Cálculo Avanzado",
+   "codes": [
+    {
+     "code": "CM0875",
+     "level": "MSTR",
+     "class": 6986,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-18",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-01-25",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-01",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-08",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-15",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-22",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-01",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-08",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-15",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-29",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-05",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-12",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-19",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-26",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-03",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-17",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-24",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 17 Aula 203",
+     "teacher": null
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 17 Aula 203"
+   ],
+   "scheduledHours": 34.0
+  },
+  {
+   "id": "MMA-CM0883-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Simulación Monte Carlo",
+   "codes": [
+    {
+     "code": "CM0883",
+     "level": "DOCT",
+     "class": 6987,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 32,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-19",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-01-26",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-02-02",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-02-09",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-02-16",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-02-23",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-03-02",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-03-09",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-03-16",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-03-23",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-03-30",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-04-06",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-04-13",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-04-20",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-04-27",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-05-04",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    },
+    {
+     "date": "2027-05-11",
+     "start": "19:00",
+     "end": "21:00",
+     "room": "Poblado Bloque 16 Aula 203",
+     "teacher": "Fredy Hernan Marin Sanchez"
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-15",
+   "teachers": [
+    "Fredy Hernan Marin Sanchez"
+   ],
+   "rooms": [
+    "Poblado Bloque 16 Aula 203"
+   ],
+   "scheduledHours": 34.0
+  },
+  {
+   "id": "MMA-CM0885-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Inferencia Estadística",
+   "codes": [
+    {
+     "code": "CM0885",
+     "level": "DOCT",
+     "class": 7112,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-19",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-01-26",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-02-02",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-02-09",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-02-16",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-02-23",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-03-02",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-03-09",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-03-16",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-03-23",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-03-30",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-04-06",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-04-13",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-04-20",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-04-27",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-05-04",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-05-11",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-05-18",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    },
+    {
+     "date": "2027-05-25",
+     "start": "15:00",
+     "end": "17:00",
+     "room": "Poblado Bloque 33 Aula 103",
+     "teacher": "Juan Daniel Molina Muñoz"
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [
+    "Juan Daniel Molina Muñoz"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 103"
+   ],
+   "scheduledHours": 38.0
+  },
+  {
+   "id": "MMA-CM0917-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Inferencia Bayesiana",
+   "codes": [
+    {
+     "code": "CM0917",
+     "level": "MSTR",
+     "class": 6996,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-02",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 14 Aula 304",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-02-09",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 14 Aula 304",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-02-16",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 14 Aula 304",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-02-23",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 14 Aula 304",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-03-02",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 14 Aula 304",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-03-09",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 14 Aula 304",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-03-16",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 14 Aula 304",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-03-23",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 14 Aula 304",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-03-30",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 14 Aula 304",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    },
+    {
+     "date": "2027-04-06",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 14 Aula 304",
+     "teacher": "Nicolas Alberto Moreno Reyes"
+    }
+   ],
+   "start": "2027-02-02",
+   "end": "2027-04-10",
+   "teachers": [
+    "Nicolas Alberto Moreno Reyes"
+   ],
+   "rooms": [
+    "Poblado Bloque 14 Aula 304"
+   ],
+   "scheduledHours": 20.0
+  },
+  {
+   "id": "MMA-MT8002-1-cur",
+   "source": "sis",
+   "sheet": "MMA",
+   "programs": [
+    "MMA"
+   ],
+   "course": "Elementos de Teo. de Conjuntos",
+   "codes": [
+    {
+     "code": "MT5001",
+     "level": "PREG",
+     "class": 4011,
+     "program": null
+    },
+    {
+     "code": "MT8002",
+     "level": "DOCT",
+     "class": 6815,
+     "program": "MMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 32,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-19",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-01-26",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-02-02",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-02-09",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-02-16",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-02-23",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-03-02",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-03-09",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-03-16",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-03-23",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-03-30",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-04-06",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-04-13",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-04-20",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-04-27",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-05-04",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    },
+    {
+     "date": "2027-05-11",
+     "start": "17:00",
+     "end": "19:00",
+     "room": "Poblado Bloque 38 Aula 302",
+     "teacher": "Andrés Sicard Ramírez"
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-16",
+   "teachers": [
+    "Andrés Sicard Ramírez"
+   ],
+   "rooms": [
+    "Poblado Bloque 38 Aula 302"
+   ],
+   "scheduledHours": 34.0
+  },
+  {
+   "id": "DIM-CM0817-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Seminario de Investigación 1",
+   "codes": [
+    {
+     "code": "CM0817",
+     "level": "DOCT",
+     "class": 6668,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-25",
+   "end": "2027-05-08",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0818-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Seminario de Investigación 2",
+   "codes": [
+    {
+     "code": "CM0818",
+     "level": "DOCT",
+     "class": 6623,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 24,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0819-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Proyecto de Tesis 1",
+   "codes": [
+    {
+     "code": "CM0819",
+     "level": "DOCT",
+     "class": 6624,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0820-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Proyecto de Tesis 2",
+   "codes": [
+    {
+     "code": "CM0820",
+     "level": "DOCT",
+     "class": 6626,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-18",
+   "end": "2027-05-01",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0821-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Seminario Doctoral 1",
+   "codes": [
+    {
+     "code": "CM0821",
+     "level": "DOCT",
+     "class": 5631,
+     "program": "DMA"
+    },
+    {
+     "code": "CI8001",
+     "level": "DOCT",
+     "class": 1237,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 12,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-08",
+     "start": "09:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Ruiz Arenas"
+    },
+    {
+     "date": "2027-03-08",
+     "start": "09:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Ruiz Arenas"
+    },
+    {
+     "date": "2027-04-05",
+     "start": "09:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Ruiz Arenas"
+    },
+    {
+     "date": "2027-05-03",
+     "start": "09:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Ruiz Arenas"
+    }
+   ],
+   "start": "2027-02-08",
+   "end": "2027-05-03",
+   "teachers": [
+    "Santiago Ruiz Arenas"
+   ],
+   "rooms": [
+    "Poblado Bloque 20 Aula 417"
+   ],
+   "scheduledHours": 12.0
+  },
+  {
+   "id": "DIM-CM0822-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Seminario Doctoral 2",
+   "codes": [
+    {
+     "code": "CM0822",
+     "level": "DOCT",
+     "class": 5627,
+     "program": "DMA"
+    },
+    {
+     "code": "CI8002",
+     "level": "DOCT",
+     "class": 1241,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 12,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-08",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-03-08",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-04-05",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-05-03",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    }
+   ],
+   "start": "2027-02-08",
+   "end": "2027-05-03",
+   "teachers": [
+    "Santiago Alberto Correa Velez"
+   ],
+   "rooms": [
+    "Poblado Bloque 20 Aula 417"
+   ],
+   "scheduledHours": 12.0
+  },
+  {
+   "id": "DIM-CM0823-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Seminario Doctoral 3",
+   "codes": [
+    {
+     "code": "CM0823",
+     "level": "DOCT",
+     "class": 5629,
+     "program": "DMA"
+    },
+    {
+     "code": "CI9002",
+     "level": "DOCT",
+     "class": 5563,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 12,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-08",
+     "start": "14:00",
+     "end": "16:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-02-15",
+     "start": "14:00",
+     "end": "16:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-02-22",
+     "start": "14:00",
+     "end": "16:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-03-01",
+     "start": "14:00",
+     "end": "16:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-03-08",
+     "start": "14:00",
+     "end": "16:00",
+     "room": null,
+     "teacher": null
+    },
+    {
+     "date": "2027-03-15",
+     "start": "14:00",
+     "end": "16:00",
+     "room": null,
+     "teacher": null
+    }
+   ],
+   "start": "2027-02-08",
+   "end": "2027-03-15",
+   "teachers": [],
+   "rooms": [],
+   "scheduledHours": 12.0
+  },
+  {
+   "id": "DIM-CM0824-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Seminario Doctoral 4",
+   "codes": [
+    {
+     "code": "CM0824",
+     "level": "DOCT",
+     "class": 5630,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 12,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-25",
+   "end": "2027-05-07",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0825-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Examen de Calificación 1",
+   "codes": [
+    {
+     "code": "CM0825",
+     "level": "DOCT",
+     "class": 6627,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 4,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-02-15",
+   "end": "2027-04-25",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0826-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Examen de Calificación 2",
+   "codes": [
+    {
+     "code": "CM0826",
+     "level": "DOCT",
+     "class": 6629,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 4,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-02-21",
+   "end": "2027-04-25",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0827-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Propuesta de Tema de Tesis",
+   "codes": [
+    {
+     "code": "CM0827",
+     "level": "DOCT",
+     "class": 6630,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 2,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-04-03",
+   "end": "2027-05-01",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0835-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Tesis 1",
+   "codes": [
+    {
+     "code": "CM0835",
+     "level": "DOCT",
+     "class": 6669,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0836-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Tesis 2",
+   "codes": [
+    {
+     "code": "CM0836",
+     "level": "DOCT",
+     "class": 6632,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-24",
+   "end": "2027-05-01",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0837-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Tesis 3",
+   "codes": [
+    {
+     "code": "CM0837",
+     "level": "DOCT",
+     "class": 6633,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0838-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Tesis 4",
+   "codes": [
+    {
+     "code": "CM0838",
+     "level": "DOCT",
+     "class": 6634,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CI8001-2-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Seminario I",
+   "codes": [
+    {
+     "code": "CI8001",
+     "level": "DOCT",
+     "class": 1238,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-15",
+     "start": "09:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Ruiz Arenas"
+    },
+    {
+     "date": "2027-03-15",
+     "start": "09:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Ruiz Arenas"
+    },
+    {
+     "date": "2027-04-12",
+     "start": "09:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Ruiz Arenas"
+    },
+    {
+     "date": "2027-05-17",
+     "start": "09:00",
+     "end": "12:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Ruiz Arenas"
+    }
+   ],
+   "start": "2027-02-15",
+   "end": "2027-05-17",
+   "teachers": [
+    "Santiago Ruiz Arenas"
+   ],
+   "rooms": [
+    "Poblado Bloque 20 Aula 417"
+   ],
+   "scheduledHours": 12.0
+  },
+  {
+   "id": "DIM-CI8002-2-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Seminario II",
+   "codes": [
+    {
+     "code": "CI8002",
+     "level": "DOCT",
+     "class": 6218,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-02-12",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Santiago Jiménez Londoño"
+    },
+    {
+     "date": "2027-03-12",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Santiago Jiménez Londoño"
+    },
+    {
+     "date": "2027-04-09",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Santiago Jiménez Londoño"
+    },
+    {
+     "date": "2027-05-07",
+     "start": "12:00",
+     "end": "15:00",
+     "room": "Poblado Bloque 14 Aula 201",
+     "teacher": "Santiago Jiménez Londoño"
+    }
+   ],
+   "start": "2027-02-12",
+   "end": "2027-05-07",
+   "teachers": [
+    "Santiago Jiménez Londoño"
+   ],
+   "rooms": [
+    "Poblado Bloque 14 Aula 201"
+   ],
+   "scheduledHours": 12.0
+  },
+  {
+   "id": "DIM-CI8003-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Principios Método Científico",
+   "codes": [
+    {
+     "code": "CI8003",
+     "level": "DOCT",
+     "class": 1175,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-19",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-01-26",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-02",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-09",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-16",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-23",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-02",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-09",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-16",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-23",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-30",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-06",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-13",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-20",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-27",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-04",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-11",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 415",
+     "teacher": null
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-14",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 20 Aula 415"
+   ],
+   "scheduledHours": 51.0
+  },
+  {
+   "id": "DIM-CI8004-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Integridad Científica",
+   "codes": [
+    {
+     "code": "CI8004",
+     "level": "DOCT",
+     "class": 1176,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-19",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-01-26",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-02-02",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-02-09",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-02-16",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-02-23",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-03-02",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-03-09",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-03-16",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-03-23",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-03-30",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-04-06",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-04-13",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-04-20",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-04-27",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-05-04",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-05-11",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-14",
+   "teachers": [
+    "Olga Lucia Quintero Montoya",
+    "Santiago Alberto Correa Velez"
+   ],
+   "rooms": [
+    "Poblado Bloque 20 Aula 417"
+   ],
+   "scheduledHours": 51.0
+  },
+  {
+   "id": "DIM-CI8004-2-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Integridad Científica",
+   "codes": [
+    {
+     "code": "CI8004",
+     "level": "DOCT",
+     "class": 1177,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "2",
+   "section": "2",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-22",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-01-29",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-02-05",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-02-12",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-02-19",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-02-26",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-03-05",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-03-12",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Santiago Alberto Correa Velez"
+    },
+    {
+     "date": "2027-03-19",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-04-02",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-04-09",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-04-16",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-04-23",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-04-30",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-05-07",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    },
+    {
+     "date": "2027-05-14",
+     "start": "06:00",
+     "end": "09:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Olga Lucia Quintero Montoya"
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-14",
+   "teachers": [
+    "Olga Lucia Quintero Montoya",
+    "Santiago Alberto Correa Velez"
+   ],
+   "rooms": [
+    "Poblado Bloque 20 Aula 417"
+   ],
+   "scheduledHours": 48.0
+  },
+  {
+   "id": "DIM-CI8004-3-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Integridad Científica",
+   "codes": [
+    {
+     "code": "CI8004",
+     "level": "DOCT",
+     "class": 6041,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "3",
+   "section": "3",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-20",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-01-27",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-02-03",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-02-10",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-02-17",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-02-24",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-03-03",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-03-10",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-03-17",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-03-24",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-03-31",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-04-07",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-04-14",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-04-21",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-04-28",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-05-05",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    },
+    {
+     "date": "2027-05-12",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 33 Aula 303",
+     "teacher": "Mauricio Arroyave Franco"
+    }
+   ],
+   "start": "2027-01-20",
+   "end": "2027-05-15",
+   "teachers": [
+    "Mauricio Arroyave Franco"
+   ],
+   "rooms": [
+    "Poblado Bloque 33 Aula 303"
+   ],
+   "scheduledHours": 51.0
+  },
+  {
+   "id": "DIM-CI8011-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Diseño Experimental",
+   "codes": [
+    {
+     "code": "CI8011",
+     "level": "DOCT",
+     "class": 1243,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-18",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-01-19",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-01-25",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-01-26",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-02-01",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-02-02",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-02-08",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-02-09",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-02-15",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-02-16",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-02-22",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-02-23",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-03-01",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-03-02",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-03-08",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-03-09",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-03-15",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-03-16",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-03-23",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-03-29",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-03-30",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-04-05",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-04-06",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-04-12",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-04-13",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-04-19",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-04-20",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-04-26",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-04-27",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-05-03",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-05-04",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    },
+    {
+     "date": "2027-05-11",
+     "start": "16:30",
+     "end": "18:00",
+     "room": "Poblado Bloque 20 Aula 417",
+     "teacher": "Valeska Villegas Escobar"
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-14",
+   "teachers": [
+    "Valeska Villegas Escobar"
+   ],
+   "rooms": [
+    "Poblado Bloque 20 Aula 417"
+   ],
+   "scheduledHours": 48.0
+  },
+  {
+   "id": "DIM-CM0846-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Series de Tiempo Económicas",
+   "codes": [
+    {
+     "code": "CM0846",
+     "level": "MSTR",
+     "class": 7089,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0853-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Modelos Lineales Generalizados",
+   "codes": [
+    {
+     "code": "CM0853",
+     "level": "MSTR",
+     "class": 7090,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-CM0873-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Procesos Estocásticos",
+   "codes": [
+    {
+     "code": "CM0873",
+     "level": "DOCT",
+     "class": 7071,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-02-01",
+   "end": "2027-04-10",
+   "teachers": [],
+   "rooms": []
+  },
+  {
+   "id": "DIM-DF0713-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Física Estadística - Avanzada",
+   "codes": [
+    {
+     "code": "DF0713",
+     "level": "MSTR",
+     "class": 7072,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 48,
+   "integratorHours": 0,
+   "directed": false,
+   "sessions": [
+    {
+     "date": "2027-01-19",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-01-26",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-02",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-09",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-16",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-02-23",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-02",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-09",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-16",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-23",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-03-30",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-06",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-13",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-20",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-04-27",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-04",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    },
+    {
+     "date": "2027-05-11",
+     "start": "17:00",
+     "end": "20:00",
+     "room": "Poblado Bloque 20 Aula 518",
+     "teacher": null
+    }
+   ],
+   "start": "2027-01-18",
+   "end": "2027-05-15",
+   "teachers": [],
+   "rooms": [
+    "Poblado Bloque 20 Aula 518"
+   ],
+   "scheduledHours": 51.0
+  },
+  {
+   "id": "DIM-MT8003-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Análisis Matemático",
+   "codes": [
+    {
+     "code": "MT8003",
+     "level": "DOCT",
+     "class": 7091,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-18",
+   "end": "2027-05-29",
+   "teachers": [
+    "Jose Manuel Escorcia Tafur"
+   ],
+   "rooms": []
+  },
+  {
+   "id": "DIM-MT9001-1-cur",
+   "source": "sis",
+   "sheet": "DIM",
+   "programs": [
+    "DMA"
+   ],
+   "course": "Modelación Basada en Agentes",
+   "codes": [
+    {
+     "code": "MT9001",
+     "level": "DOCT",
+     "class": 7073,
+     "program": "DMA"
+    }
+   ],
+   "semester": "Cursos del programa",
+   "group": "1",
+   "section": "1",
+   "plannedHours": 36,
+   "integratorHours": 0,
+   "directed": true,
+   "sessions": [],
+   "start": "2027-01-25",
+   "end": "2027-05-08",
+   "teachers": [
+    "Paula Alejandra Escudero Marin"
+   ],
+   "rooms": []
+  },
+  {
    "id": "EDS-SI6005-1-pri",
    "source": "eds",
    "sheet": "EDS",
@@ -4795,6 +8827,156 @@
    "detail": "Docente por asignar"
   },
   {
+   "type": "horas",
+   "offering": "DIM-CM0806-1-cur",
+   "detail": "63 h programadas de 60 h"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MMA-CM0830-1-cur",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MMA-CM0830-1-cur",
+   "detail": "15 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "horas",
+   "offering": "MMA-CM0849-1-cur",
+   "detail": "39 h programadas de 36 h"
+  },
+  {
+   "type": "horas",
+   "offering": "MMA-CM0850-1-cur",
+   "detail": "34 h programadas de 36 h"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MMA-CM0850-1-cur",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "MMA-CM0850-1-cur",
+   "detail": "17 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "horas",
+   "offering": "MMA-CM0864-1-cur",
+   "detail": "18 h programadas de 36 h"
+  },
+  {
+   "type": "horas",
+   "offering": "MMA-CM0868-1-cur",
+   "detail": "34 h programadas de 36 h"
+  },
+  {
+   "type": "horas",
+   "offering": "MMA-CM0874-1-cur",
+   "detail": "38 h programadas de 36 h"
+  },
+  {
+   "type": "horas",
+   "offering": "MMA-MT5007-1-cur",
+   "detail": "38 h programadas de 36 h"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MMA-MT5007-1-cur",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "horas",
+   "offering": "MMA-CM0874-2-cur",
+   "detail": "38 h programadas de 36 h"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MMA-CM0874-2-cur",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "horas",
+   "offering": "MMA-CM0875-1-cur",
+   "detail": "34 h programadas de 36 h"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "MMA-CM0875-1-cur",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "horas",
+   "offering": "MMA-CM0883-1-cur",
+   "detail": "34 h programadas de 32 h"
+  },
+  {
+   "type": "horas",
+   "offering": "MMA-CM0885-1-cur",
+   "detail": "38 h programadas de 36 h"
+  },
+  {
+   "type": "horas",
+   "offering": "MMA-CM0917-1-cur",
+   "detail": "20 h programadas de 36 h"
+  },
+  {
+   "type": "horas",
+   "offering": "MMA-MT8002-1-cur",
+   "detail": "34 h programadas de 32 h"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "DIM-CM0823-1-cur",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "sin_aula",
+   "offering": "DIM-CM0823-1-cur",
+   "detail": "6 sesión(es) sin aula asignada"
+  },
+  {
+   "type": "horas",
+   "offering": "DIM-CI8001-2-cur",
+   "detail": "12 h programadas de 48 h"
+  },
+  {
+   "type": "horas",
+   "offering": "DIM-CI8002-2-cur",
+   "detail": "12 h programadas de 48 h"
+  },
+  {
+   "type": "horas",
+   "offering": "DIM-CI8003-1-cur",
+   "detail": "51 h programadas de 48 h"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "DIM-CI8003-1-cur",
+   "detail": "Docente por asignar"
+  },
+  {
+   "type": "horas",
+   "offering": "DIM-CI8004-1-cur",
+   "detail": "51 h programadas de 48 h"
+  },
+  {
+   "type": "horas",
+   "offering": "DIM-CI8004-3-cur",
+   "detail": "51 h programadas de 48 h"
+  },
+  {
+   "type": "horas",
+   "offering": "DIM-DF0713-1-cur",
+   "detail": "51 h programadas de 48 h"
+  },
+  {
+   "type": "sin_docente",
+   "offering": "DIM-DF0713-1-cur",
+   "detail": "Docente por asignar"
+  },
+  {
    "type": "sin_docente",
    "offering": "EDS-ID0604-1-ele",
    "detail": "Docente por asignar"
@@ -4813,6 +8995,39 @@
    "type": "sin_docente",
    "offering": "EDS-ST1611-1-ele",
    "detail": "Docente por asignar"
+  },
+  {
+   "type": "cruce_aula",
+   "offering": "MMA-CM0874-2-cur",
+   "other": "MMA-MT5007-1-cur",
+   "date": "2027-01-19",
+   "dates": [
+    "2027-01-19",
+    "2027-01-26",
+    "2027-02-02",
+    "2027-02-09",
+    "2027-02-16",
+    "2027-02-23",
+    "2027-03-02",
+    "2027-03-09",
+    "2027-03-16",
+    "2027-03-23",
+    "2027-03-30",
+    "2027-04-06",
+    "2027-04-13",
+    "2027-04-20",
+    "2027-04-27",
+    "2027-05-04",
+    "2027-05-11",
+    "2027-05-18",
+    "2027-05-25"
+   ],
+   "detail": "Aula Poblado Bloque 34 Aula 501: Álgebra Lineal y Álgebra Lineal (MMA) (17:00–19:00 / 17:00–19:00), 19 fechas"
+  },
+  {
+   "type": "combinada_distinta",
+   "offering": "MMA-MT5007-1-cur",
+   "detail": "MT5007 está en la sección combinada 0676 con CM0874, pero su horario es distinto"
   }
  ]
 }
