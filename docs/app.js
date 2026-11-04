@@ -41,6 +41,16 @@ const visiblePrograms = (o) => o.programs.filter((p) => state.programs.has(p));
 const mainProgram = (o) => visiblePrograms(o)[0] ?? o.programs[0];
 const SEM_LABEL = { "Primer semestre": ["1.er sem", "S1"], "Segundo semestre": ["2.º sem", "S2"], "Tercer semestre": ["3.er sem", "S3"], Electivas: ["Electiva", "E"] };
 const semBadge = (o, short) => `<span class="sem" title="${esc(o.semester)}">${SEM_LABEL[o.semester]?.[short ? 1 : 0] ?? esc(o.semester)}</span>`;
+const LEVEL_LABEL = { PREG: "Pregrado", MSTR: "Maestría", ESPE: "Especialización", DOCT: "Doctorado", "Pre/Pos": "Pre/Pos", Pos: "Posgrado" };
+const codeLabel = (c) => c.program ? PROGRAM_SHORT[c.program] : (LEVEL_LABEL[c.level] ?? "Pregrado");
+// onlyIn: código -> grupos, para marcar los códigos combinados solo con algunos grupos
+function codesHTML(codes, onlyIn) {
+  const seen = new Map();
+  codes.forEach((c) => { if (!seen.has(c.code)) seen.set(c.code, c); });
+  const order = (c) => c.program ? DATA.programs.findIndex((p) => p.id === c.program) : 9;
+  return [...seen.values()].sort((a, b) => order(a) - order(b)).map((c) =>
+    `<div class="code-row"><span class="codes" style="color:var(--text)">${esc(c.code)}</span>${c.program ? `<span class="dot" style="background:${color(c.program)}"></span>` : ""}<span style="color:var(--text-2)">${esc(codeLabel(c))}${onlyIn?.[c.code] ? ` · solo ${esc(onlyIn[c.code])}` : ""}</span></div>`).join("");
+}
 const teacherList = (o) => o.teachers.length ? esc(o.teachers.join(", ")) : `<span class="pending">Por asignar</span>`;
 
 function schedulePattern(o) {
@@ -80,6 +90,7 @@ function offeringTip(o) {
   const h = o.directed ? `${o.plannedHours} h (dirigido)` : `${fmtH(o.scheduledHours)} h · ${o.sessions.length} sesiones`;
   return `<div class="tt-title">${esc(o.course)}</div>
     <div class="row"><span class="k">${o.programs.map(pill).join(" ")}</span><span>${esc(o.semester)} · G${esc(o.group)}</span></div>
+    <div class="row" style="align-items:flex-start"><span class="k">${o.codes.length > 1 ? "Códigos" : "Código"}</span><span>${codesHTML(o.codes)}</span></div>
     <div class="row"><span class="k">Fechas</span><b>${fmtRange(o.start, o.end)}</b></div>
     <div class="row"><span class="k">Horas</span><b>${h}</b></div>
     <div class="row"><span class="k">Docente</span><span>${teacherList(o)}</span></div>`;
@@ -558,10 +569,21 @@ function renderWeekGrid(byDate, plan) {
     bindTip(el, () => it.list.length === 1
       ? `${offeringTip(o)}<div class="row"><span class="k">Esta sesión</span><b>${s.start}–${s.end}</b></div><div class="row"><span class="k">Aula</span><span>${esc(s.room || "—")}</span></div>${it.clash ? `<div style="color:var(--critical);margin-top:4px">Coincide con la electiva propuesta</div>` : ""}`
       : `<div class="tt-title">${esc(o.course)}</div><div class="row"><span class="k">${visiblePrograms(o).map(pill).join(" ")}</span><b>${s.start}–${s.end}</b></div>` +
+        `<div class="row" style="align-items:flex-start"><span class="k">Códigos</span><span>${codesHTML(it.list.flatMap((x) => x.o.codes), partialCodes(it.list))}</span></div>` +
         it.list.map((x) => `<div class="row"><span class="k">Grupo ${esc(x.o.group)}</span><span>${x.o.teachers.length ? esc(x.o.teachers.join(", ")) : "por asignar"} · ${esc((x.s.room || "—").replace("Poblado ", ""))}</span></div>`).join("") +
         (it.clash ? `<div style="color:var(--critical);margin-top:4px">Coincide con la electiva propuesta</div>` : ""));
     el.addEventListener("click", () => it.list.length === 1 ? openDetail(o) : openDay(it.s.date, it.list));
   });
+}
+
+function partialCodes(list) {
+  const out = {};
+  const all = new Set(list.flatMap((x) => x.o.codes.map((c) => c.code)));
+  for (const code of all) {
+    const gs = list.filter((x) => x.o.codes.some((c) => c.code === code)).map((x) => "G" + x.o.group);
+    if (gs.length < list.length) out[code] = gs.join(", ");
+  }
+  return out;
 }
 
 function initPlanner() {
