@@ -301,6 +301,9 @@ dialog::backdrop { background: rgba(0, 0, 0, .35); }
 .blk:hover { background: color-mix(in srgb, var(--c) 30%, var(--surface)); z-index: 1; }
 .blk .t { color: var(--text-2); font-variant-numeric: tabular-nums; }
 .blk .p { font-weight: 700; }
+.blk .tags { display: flex; flex-wrap: wrap; align-items: center; gap: 3px; margin: 1px 0 2px; }
+.sem { display: inline-block; font-size: 10px; font-weight: 700; line-height: 1.3; padding: 0 5px; border-radius: 3px; background: var(--text); color: var(--surface); white-space: nowrap; flex: none; }
+.ev .sem { font-size: 9.5px; padding: 0 3px; }
 .blk.clash { box-shadow: 0 0 0 1px var(--surface), inset 0 0 0 1.5px var(--critical); }
 .blk.prop { background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--text) 10%, var(--surface)) 0 5px, var(--surface) 5px 10px); border-left-color: var(--text); border: 1.5px dashed var(--text); }
 

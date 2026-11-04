@@ -39,6 +39,8 @@ const programName = (id) => DATA.programs.find((p) => p.id === id)?.name ?? id;
 const pill = (p) => `<span class="pill"><span class="dot" style="background:${color(p)}"></span>${PROGRAM_SHORT[p]}</span>`;
 const visiblePrograms = (o) => o.programs.filter((p) => state.programs.has(p));
 const mainProgram = (o) => visiblePrograms(o)[0] ?? o.programs[0];
+const SEM_LABEL = { "Primer semestre": ["1.er sem", "S1"], "Segundo semestre": ["2.º sem", "S2"], "Tercer semestre": ["3.er sem", "S3"], Electivas: ["Electiva", "E"] };
+const semBadge = (o, short) => `<span class="sem" title="${esc(o.semester)}">${SEM_LABEL[o.semester]?.[short ? 1 : 0] ?? esc(o.semester)}</span>`;
 const teacherList = (o) => o.teachers.length ? esc(o.teachers.join(", ")) : `<span class="pending">Por asignar</span>`;
 
 function schedulePattern(o) {
@@ -322,11 +324,11 @@ function renderCalendar(rows) {
   const MAX = 5;
   for (const d of cells) {
     const iso = isoOf(d), out = d.getMonth() !== m;
-    const evs = (byDate.get(iso) || []).sort((a, b) => a.s.start.localeCompare(b.s.start) || a.o.course.localeCompare(b.o.course));
+    const evs = (byDate.get(iso) || []).sort((a, b) => a.s.start.localeCompare(b.s.start) || SEMESTER_ORDER.indexOf(a.o.semester) - SEMESTER_ORDER.indexOf(b.o.semester) || a.o.course.localeCompare(b.o.course) || a.o.group.localeCompare(b.o.group));
     const tag = hol.has(iso) ? `<span class="tag hol" title="${esc(hol.get(iso))}">${esc(hol.get(iso))}</span>` : acad.has(iso) ? `<span class="tag" title="${esc(acad.get(iso))}">${esc(acad.get(iso))}</span>` : "";
     html += `<div class="day ${out ? "out" : ""} ${hol.has(iso) ? "holiday" : ""} ${!evs.length && !tag ? "empty" : ""}"><div class="num"><span>${out ? "" : DOW[d.getDay()] + " "}${d.getDate()}</span>${tag}</div>`;
     evs.slice(0, MAX).forEach(({ o, s }) => {
-      html += `<div class="ev" style="--c:${color(mainProgram(o))}" data-id="${o.id}" data-date="${iso}" data-start="${s.start}"><span class="t">${s.start}</span><span class="p">${visiblePrograms(o).map((p) => PROGRAM_SHORT[p]).join("·")}</span><span class="n">${o.semester !== "Electivas" ? `G${esc(o.group)} ` : ""}${esc(o.course)}</span></div>`;
+      html += `<div class="ev" style="--c:${color(mainProgram(o))}" data-id="${o.id}" data-date="${iso}" data-start="${s.start}"><span class="t">${s.start}</span><span class="p">${visiblePrograms(o).map((p) => PROGRAM_SHORT[p]).join("·")}</span>${semBadge(o, true)}<span class="n">${o.semester !== "Electivas" ? `G${esc(o.group)} ` : ""}${esc(o.course)}</span></div>`;
     });
     if (evs.length > MAX) html += `<button class="more" data-date="${iso}">+${evs.length - MAX} más</button>`;
     html += `</div>`;
@@ -476,7 +478,8 @@ function renderHeat(rows) {
 }
 
 function layoutLanes(items) {
-  items.sort((a, b) => mins(a.s.start) - mins(b.s.start) || mins(b.s.end) - mins(a.s.end));
+  const semIdx = (it) => it.prop ? 99 : SEMESTER_ORDER.indexOf(it.list[0].o.semester);
+  items.sort((a, b) => mins(a.s.start) - mins(b.s.start) || semIdx(a) - semIdx(b) || mins(b.s.end) - mins(a.s.end));
   let cluster = [], clusterEnd = -1;
   const flush = () => { const n = Math.max(...cluster.map((x) => x.lane)) + 1; cluster.forEach((x) => { x.n = n; }); cluster = []; };
   for (const it of items) {
@@ -540,10 +543,11 @@ function renderWeekGrid(byDate, plan) {
         continue;
       }
       const o = it.list[0].o;
-      const groups = o.semester === "Electivas" ? "electiva" : "G" + it.list.map((x) => esc(x.o.group)).sort().join("·G");
+      const groups = o.semester === "Electivas" ? "" : " · G" + it.list.map((x) => esc(x.o.group)).sort().join("·G");
       html += `<div class="blk ${it.clash ? "clash" : ""}" data-b="${blocks.length}" style="${pos};--c:${color(mainProgram(o))}">
-        <span class="t">${it.s.start}–${it.s.end}</span> <span class="p">${visiblePrograms(o).map((p) => PROGRAM_SHORT[p]).join("·")}</span><br>
-        ${esc(o.course)} · ${groups}</div>`;
+        <span class="t">${it.s.start}–${it.s.end}</span>
+        <div class="tags"><span class="p">${visiblePrograms(o).map((p) => PROGRAM_SHORT[p]).join("·")}</span>${semBadge(o)}</div>
+        ${esc(o.course)}${groups}</div>`;
       blocks.push(it);
     }
     html += `</div>`;
